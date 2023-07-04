@@ -66,34 +66,6 @@ public static class ModScripts
         File.Copy(src, dest, true);
     }
 
-    [MenuItem("Generate/Coordinate Assets")]
-    static void GenerateCoordinateAssets()
-    {
-        var shader = Shader.Find("Custom/Sigil");
-        var rootPath = "Assets/Mod Assets/Textures/Coordinates";
-        Directory.CreateDirectory(Path.Combine(rootPath, "Materials/"));
-        Directory.CreateDirectory(Path.Combine(rootPath, "Objects/"));
-        var texturePaths = AssetDatabase.FindAssets("t:Texture2D", new[] { rootPath }).Select(guid => AssetDatabase.GUIDToAssetPath(guid));
-        foreach (var texPath in texturePaths)
-        {
-            var name = Path.GetFileNameWithoutExtension(texPath);
-            var mat = new Material(shader);
-            mat.mainTexture = AssetDatabase.LoadAssetAtPath<Texture2D>(texPath);
-            mat.color = new Color32(0x95, 0x80, 0xFF, 0xFF);
-            mat.SetFloat("_NoiseScale", 8f);
-            mat.SetFloat("_TimeScale", 0.25f);
-            var matPath = Path.Combine(rootPath, "Materials/", name + ".mat");
-            AssetDatabase.CreateAsset(mat, matPath);
-            var go = GameObject.CreatePrimitive(PrimitiveType.Quad);
-            GameObject.DestroyImmediate(go.GetComponent<MeshCollider>());
-            go.GetComponent<MeshRenderer>().sharedMaterial = mat;
-            var goPath = Path.Combine(rootPath, "Objects/", name + ".prefab");
-            PrefabUtility.SaveAsPrefabAsset(go, goPath);
-            AssetImporter.GetAtPath(goPath).SetAssetBundleNameAndVariant("puzzleship", null);
-            
-        }
-    }
-
     [System.Serializable]
     public class ManifestJson
     {
