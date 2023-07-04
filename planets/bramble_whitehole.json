@@ -1,0 +1,35 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "DB_D_WHITEHOLE",
+  "Orbit": {
+    "staticPosition": {
+      "x": 10000,
+      "y": 20000,
+      "z": 0
+    },
+    "isStatic": true
+  },
+  "Bramble": {
+    "dimension": {
+      "linksTo": "TM_N_WHITEHOLE",
+      "vinePrefab": "smallNest",
+      "radius": 200,
+      "fogDensity": 3
+    }
+  },
+  "Props": {
+    "singularities": [
+      {
+        "type": "whiteHole",
+        "distortRadius": 150,
+        "horizonRadius": 60,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "uniqueID": "DB_WHITE_HOLE"
+      }
+    ]
+  }
+}

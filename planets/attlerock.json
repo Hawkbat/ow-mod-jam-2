@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "TIMBER_MOON",
+  "Bramble": {
+    "nodes": [
+      {
+        "name": "TM_N_WHITEHOLE",
+        "linksTo": "DB_D_WHITEHOLE",
+        "scale": 0.5,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 22
+        },
+        "possibleExits": [ 0, 2 ]
+      }
+    ]
+  }
+}
