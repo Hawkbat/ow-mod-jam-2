@@ -58,6 +58,13 @@ public static class ModScripts
             var name = Path.GetFileName(path);
             Copy(Path.Combine(Path.Combine(rootDirectory, "translations"), name), Path.Combine(modOutputDirectory, "translations", name));
         }
+        try
+        {
+            Copy(Path.Combine(rootDirectory, "./AssetProject/Assets/Plugins/", manifest.filename), Path.Combine(modOutputDirectory, manifest.filename));
+        } catch (Exception ex)
+        {
+            Debug.LogError(ex.ToString());
+        }
     }
 
     static void Copy(string src, string dest)

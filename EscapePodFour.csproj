@@ -44,4 +44,7 @@
     <PackageReference Include="OuterWildsGameLibs" Version="1.1.13.456" />
     <PackageReference Include="OWML" Version="2.9.0" />
   </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /Y &quot;$(TargetDir)$(ProjectName).dll&quot; &quot;$(SolutionDir)AssetProject\Assets\Plugins\$(ProjectName).dll&quot;" />
+  </Target>
 </Project>
