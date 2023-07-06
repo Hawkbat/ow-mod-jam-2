@@ -18,6 +18,22 @@
     }
   },
   "Props": {
+    "details": [
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -19.93126,
+          "y": -159.7918,
+          "z": 118.1644
+        },
+        "rotation": {
+          "x": 305.6751,
+          "y": 37.53132,
+          "z": 330.5033
+        }
+      }
+    ],
     "singularities": [
       {
         "type": "whiteHole",

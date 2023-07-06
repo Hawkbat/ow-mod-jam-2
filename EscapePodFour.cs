@@ -143,6 +143,10 @@ namespace EscapePodFour
                     GUI.Label(new Rect(WorldToGui(v.GetExitPosition(e)), new Vector2(150f, 20f)), e.name);
                 }
             }
+            foreach (var h in HopperController.All)
+            {
+                GUI.Label(new Rect(WorldToGui(h.transform.position), new Vector2(250f, 20f)), $"{h.name} x{h.Size} ({h.State} {h.Target})");
+            }
         }
 
         void OnBodyLoaded(string bodyName)
