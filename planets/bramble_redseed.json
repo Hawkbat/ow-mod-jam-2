@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "DB_D_REDSEED",
+  "Orbit": {
+    "staticPosition": {
+      "x": 10000,
+      "y": 20000,
+      "z": 2000
+    },
+    "isStatic": true
+  },
+  "Bramble": {
+    "dimension": {
+      "linksTo": "DB_D_WHITEHOLE",
+      "vinePrefab": "smallNest",
+      "radius": 200,
+      "fogDensity": 3
+    }
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -19.93126,
+          "y": -159.7918,
+          "z": 118.1644
+        },
+        "rotation": {
+          "x": 305.6751,
+          "y": 37.53132,
+          "z": 330.5033
+        }
+      },
+      {
+        "path": "Anglerfish_Body",
+        "position": {
+          "x": -88.08582,
+          "y": -201.3546,
+          "z": 14.40182
+        },
+        "rotation": {
+          "x": 47.27332,
+          "y": 42.2583,
+          "z": 307.2383
+        },
+        "scale": 0.05
+      }
+    ]
+  }
+}

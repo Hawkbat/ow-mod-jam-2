@@ -1,0 +1,7 @@
+{
+  "initialized": true,
+  "warpScaleChanges": {
+    "DB_N_WHITEHOLE_TO_REDSEED": 2,
+    "DB_D_REDSEED": 0.5
+  }
+}

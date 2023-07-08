@@ -10,6 +10,32 @@
     "isStatic": true
   },
   "Bramble": {
+    "nodes": [
+      {
+        "name": "DB_N_WHITEHOLE_TO_REDSEED",
+        "linksTo": "DB_D_REDSEED",
+        "position": {
+          "x": -88.08582,
+          "y": -201.3546,
+          "z": 14.40182
+        },
+        "rotation": {
+          "x": 47.27332,
+          "y": 42.2583,
+          "z": 307.2383
+        },
+        "fogTint": {
+          "r": 255,
+          "g": 191,
+          "b": 191
+        },
+        "lightTint": {
+          "r": 255,
+          "g": 191,
+          "b": 191
+        }
+      }
+    ],
     "dimension": {
       "linksTo": "TM_N_WHITEHOLE",
       "vinePrefab": "smallNest",
@@ -31,7 +57,8 @@
           "x": 305.6751,
           "y": 37.53132,
           "z": 330.5033
-        }
+        },
+        "scale": 5
       }
     ],
     "singularities": [
