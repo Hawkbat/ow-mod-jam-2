@@ -7,6 +7,7 @@ using HarmonyLib;
 
 namespace EscapePodFour
 {
+    [HarmonyPatch]
     public static class Patches
     {
         [HarmonyPrefix, HarmonyPatch(typeof(AnglerfishController), nameof(AnglerfishController.OnCaughtObject))]
@@ -31,7 +32,6 @@ namespace EscapePodFour
             if (__instance._attachedBody == null) EscapePodFour.LogError("_attachedBody NULL");
             if (__instance._sector == null) EscapePodFour.LogError("_sector NULL");
             if (__instance._sector.GetTriggerVolume() == null) EscapePodFour.LogError("_sector.GetTriggerVolume() NULL");
-            EscapePodFour.Log($"WarpDetector {__instance}, {detector}, {linkedWarpVolume}");
         }
     }
 }

@@ -11,7 +11,7 @@
   },
   "Bramble": {
     "dimension": {
-      "linksTo": "DB_D_WHITEHOLE",
+      "linksTo": "DB_N_WHITEHOLE_TO_REDSEED",
       "vinePrefab": "smallNest",
       "radius": 200,
       "fogDensity": 3
