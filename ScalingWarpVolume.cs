@@ -36,6 +36,11 @@ namespace EscapePodFour
                 {
                     EscapePodFour.Log($"{detector.transform.root.name} changing scale by {ScaleChange} (Old: {scaleCtrl.Scale}, New: {scaleCtrl.Scale * ScaleChange})");
                     scaleCtrl.Scale *= ScaleChange;
+                    if (scaleCtrl is ScaledShipController && PlayerState.IsAttached() && PlayerState.IsInsideShip())
+                    {
+                        EscapePodFour.Log($"{EscapePodFour.ScaledPlayer.transform.root.name} changing scale by {ScaleChange} (Old: {scaleCtrl.Scale}, New: {scaleCtrl.Scale * ScaleChange})");
+                        EscapePodFour.ScaledPlayer.Scale *= ScaleChange;
+                    }
                 }
             }
         }

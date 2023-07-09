@@ -22,7 +22,9 @@ namespace EscapePodFour
         {
             base.UpdateScale(newScale, oldScale);
             var probeScale = Vector3.one * (probe.IsLaunched() ? Scale : 1f);
-            probe.transform.localScale = probeScale;
+            transform.localScale = Vector3.one;
+            transform.localScale = new Vector3(probeScale.x / transform.lossyScale.x, probeScale.y / transform.lossyScale.y, probeScale.z / transform.lossyScale.z);
+            transform.localScale = probeScale;
         }
 
         void Update()
