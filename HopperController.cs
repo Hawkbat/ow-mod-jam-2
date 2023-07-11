@@ -39,6 +39,7 @@ namespace EscapePodFour
         OWRigidbody body;
         ImpactSensor impactSensor;
         GenericNoiseMaker noiseMaker;
+        Animator animator;
 
         bool scared;
         float stateTime;
@@ -52,6 +53,7 @@ namespace EscapePodFour
             body = gameObject.GetComponent<OWRigidbody>();
             impactSensor = gameObject.GetComponent<ImpactSensor>();
             noiseMaker = gameObject.GetComponent<GenericNoiseMaker>();
+            animator = gameObject.GetComponentInChildren<Animator>();
 
             base.Awake();
 
@@ -93,6 +95,7 @@ namespace EscapePodFour
             {
                 case ActionState.Idle:
                     {
+                        animator.SetBool("isIdle", true);
                         body.SetMass(REST_MASS * Scale);
                         body.SetVelocity(Vector3.zero);
                         noiseMaker.enabled = false;
@@ -125,6 +128,7 @@ namespace EscapePodFour
                     break;
                 case ActionState.Jumping:
                     {
+                        animator.SetBool("isIdle", false);
                         body.SetMass(REST_MASS * Scale);
                         body.SetVelocity(Vector3.zero);
                         noiseMaker.enabled = true;
