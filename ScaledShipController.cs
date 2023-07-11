@@ -14,6 +14,8 @@ namespace EscapePodFour
 
         public override float SizeMultiplier => 8f;
 
+        public override bool IsEmittingLight() => cockpitController.AreExternalLightsOn();
+
         protected override void Awake()
         {
             base.Awake();

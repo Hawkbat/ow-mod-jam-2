@@ -1,7 +1,17 @@
 {
   "initialized": true,
   "warpScaleChanges": {
+    "DB_N_VESSEL_TO_ENTRY": 1,
+    "DB_D_ENTRY": 1,
+    "DB_N_ENTRY_TO_WHITEHOLE": 1,
+    "DB_D_WHITEHOLE": 1,
     "DB_N_WHITEHOLE_TO_REDSEED": 2,
-    "DB_D_REDSEED": 0.5
+    "DB_N_WHITEHOLE_TO_FEEDGROUND": 2,
+    "DB_N_WHITEHOLE_TO_MININGSITE": 0.5,
+    "DB_D_REDSEED": 0.5,
+    "DB_D_FEEDGROUND": 1,
+    "DB_N_FEEDGROUND_TO_HOPPERTOWN": 1,
+    "DB_D_HOPPERTOWN": 1,
+    "DB_D_MININGSITE": 1
   }
 }

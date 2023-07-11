@@ -30,7 +30,7 @@ namespace EscapePodFour
         const float PLAYER_DETECTION_RADIUS = 100f;
         const float SHIP_DETECTION_RADIUS = 150f;
         const float PROBE_DETECTION_RADIUS = 200f;
-        const float FOG_EXIT_DETECTION_RADIUS = 50f;
+        const float FOG_EXIT_DETECTION_RADIUS = 150f;
         const float ANGLER_DETECTION_RADIUS = 200f;
 
         public ActionState State;
@@ -44,6 +44,8 @@ namespace EscapePodFour
         float stateTime;
 
         RaycastHit[] hitBuffer = new RaycastHit[8];
+
+        public override bool IsEmittingLight() => false;
 
         protected override void Awake()
         {
@@ -96,9 +98,19 @@ namespace EscapePodFour
                         noiseMaker.enabled = false;
                         if (Time.time > stateTime + IDLE_DELAY)
                         {
-                            foreach (var exit in EscapePodFour.GetFogWarpExits())
+                            if (Target)
                             {
-                                if (AttemptAcquireTarget(exit.transform, 0f, FOG_EXIT_DETECTION_RADIUS * Scale)) return;
+                                var ctrl = Target.GetComponent<ScaledCharacterController>();
+                                if (ctrl.CurrentWarpVolume != CurrentWarpVolume && ctrl.PreviousWarpVolume == CurrentWarpVolume)
+                                {
+                                    foreach (var (warpVolume, exit) in EscapePodFour.GetFogWarpExits())
+                                    {
+                                        if (warpVolume == ctrl.PreviousWarpVolume && exit == warpVolume.FindClosestWarpExit(body.GetPosition()))
+                                        {
+                                            if (AttemptAcquireTarget(exit.transform, 0f, FOG_EXIT_DETECTION_RADIUS * Scale)) return;
+                                        }
+                                    }
+                                }
                             }
                             if (AttemptAcquireTarget(EscapePodFour.ScaledProbe, PROBE_DETECTION_RADIUS * Scale)) return;
                             if (AttemptAcquireTarget(EscapePodFour.ScaledShip, SHIP_DETECTION_RADIUS * Scale)) return;
@@ -107,6 +119,7 @@ namespace EscapePodFour
                             {
                                 if (AttemptAcquireTarget(angler, ANGLER_DETECTION_RADIUS * Scale)) return;
                             }
+                            Target = null;
                         }
                     }
                     break;
@@ -179,7 +192,6 @@ namespace EscapePodFour
                             if (hit.collider && !hit.collider.isTrigger && hit.collider.transform.root != transform.root && hit.collider.transform.root != Target)
                             {
                                 ChangeState(ActionState.Idle);
-                                Target = null;
                                 return;
                             }
                         }
@@ -188,7 +200,6 @@ namespace EscapePodFour
                         if (body.GetVelocity().magnitude < REST_VELOCITY_LIMIT)
                         {
                             ChangeState(ActionState.Idle);
-                            Target = null;
                             return;
                         }
                     }
@@ -204,6 +215,7 @@ namespace EscapePodFour
 
         bool AttemptAcquireTarget(ScaledCharacterController c, float detectionRadius)
         {
+            if (!c.IsEmittingLight()) return false;
             return AttemptAcquireTarget(c.transform, c.Size, detectionRadius);
         }
 
@@ -231,7 +243,6 @@ namespace EscapePodFour
             }
             else if (State == ActionState.Landing)
             {
-                Target = null;
                 ChangeState(ActionState.Idle);
             }
         }

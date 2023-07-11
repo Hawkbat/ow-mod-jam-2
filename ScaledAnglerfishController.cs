@@ -23,15 +23,18 @@ namespace EscapePodFour
 
         public override float SizeMultiplier => 50f;
 
+        public override bool IsEmittingLight() => true;
+
         protected override void UpdateScale(float newScale, float oldScale)
         {
             base.UpdateScale(newScale, oldScale);
-            angler._acceleration = INITIAL_ACCELERATION * Scale;
-            angler._arrivalDistance = INITIAL_ARRIVAL_DISTANCE * Scale;
-            angler._chaseSpeed = INITIAL_CHASE_SPEED * Scale;
-            angler._escapeDistance = INITIAL_ESCAPE_DISTANCE * Scale;
-            angler._investigateSpeed = INITIAL_INVESTIGATE_SPEED * Scale;
-            angler._pursueDistance = INITIAL_PURSUE_DISTANCE * Scale;
+            var gradualScale = Mathf.Sqrt(Scale);
+            angler._acceleration = INITIAL_ACCELERATION * gradualScale;
+            angler._arrivalDistance = INITIAL_ARRIVAL_DISTANCE * gradualScale;
+            angler._chaseSpeed = INITIAL_CHASE_SPEED * gradualScale;
+            angler._escapeDistance = INITIAL_ESCAPE_DISTANCE * gradualScale;
+            angler._investigateSpeed = INITIAL_INVESTIGATE_SPEED * gradualScale;
+            angler._pursueDistance = INITIAL_PURSUE_DISTANCE * gradualScale;
             angler._mouthOffset = INITIAL_MOUTH_OFFSET * Scale;
         }
 

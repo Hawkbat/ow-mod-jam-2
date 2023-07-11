@@ -18,6 +18,9 @@ namespace EscapePodFour
         }
 
         public override float SizeMultiplier => 0.5f;
+
+        public override bool IsEmittingLight() => probe && probe.IsLaunched();
+
         protected override void UpdateScale(float newScale, float oldScale)
         {
             base.UpdateScale(newScale, oldScale);

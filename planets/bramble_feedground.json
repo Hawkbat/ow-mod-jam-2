@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "DB_D_FEEDGROUND",
+  "Orbit": {
+    "staticPosition": {
+      "x": 10000,
+      "y": 20000,
+      "z": 4000
+    },
+    "isStatic": true
+  },
+  "Bramble": {
+    "nodes": [
+      {
+        "name": "DB_N_FEEDGROUND_TO_HOPPERTOWN",
+        "linksTo": "DB_D_HOPPERTOWN"
+      }
+    ],
+    "dimension": {
+      "linksTo": "DB_N_WHITEHOLE_TO_FEEDGROUND",
+      "vinePrefab": "smallNest",
+      "radius": 200,
+      "fogTint": {
+        "r": 63,
+        "g": 255,
+        "b": 63
+      },
+      "fogDensity": 3
+    }
+  },
+  "Props": {
+    "details": []
+  }
+}

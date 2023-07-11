@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
-using HarmonyLib;
+using System.Linq;
 using System.Reflection;
+using HarmonyLib;
 using OWML.Common;
 using OWML.ModHelper;
 using UnityEngine;
@@ -28,13 +29,13 @@ namespace EscapePodFour
         static List<OuterFogWarpVolume> outerFogWarpVolumes = new();
         static List<InnerFogWarpVolume> innerFogWarpVolumes = new();
 
-        public static IEnumerable<SphericalFogWarpExit> GetFogWarpExits()
+        public static IEnumerable<(SphericalFogWarpVolume, SphericalFogWarpExit)> GetFogWarpExits()
         {
             foreach (var fogWarpVolume in fogWarpVolumes)
             {
                 foreach (var exit in fogWarpVolume._exits)
                 {
-                    yield return exit;
+                    yield return (fogWarpVolume, exit);
                 }
             }
         }
@@ -45,6 +46,9 @@ namespace EscapePodFour
             if (tweaks.warpScaleChanges.TryGetValue(key, out var scaleChange))
             {
                 return scaleChange;
+            } else if (key.StartsWith("DB_D_") || key.StartsWith("DB_N_"))
+            {
+                LogWarning($"No scale defined for {key}");
             }
             return 1f;
         }
@@ -117,6 +121,25 @@ namespace EscapePodFour
 
         void Update()
         {
+            if (Keyboard.current.numpadEnterKey.wasPressedThisFrame)
+            {
+                var player = Locator.GetPlayerTransform();
+                var planetRoots = Locator.GetPlayerSectorDetector()
+                    ._sectorList
+                    .Select(s => s.transform.root)
+                    .Distinct();
+                foreach (var planetRoot in planetRoots)
+                {
+                    var relativePosition = planetRoot.InverseTransformPoint(player.position);
+                    var relativeRotation = planetRoot.InverseTransformRotation(player.rotation).eulerAngles;
+                    var relativeNormal = planetRoot.InverseTransformDirection(player.up);
+
+                    Log($@"Player location on {planetRoot.name}
+""position"": {Vector3ToJsonString(relativePosition)},
+""rotation"": {Vector3ToJsonString(relativeRotation)},
+""normal"": {Vector3ToJsonString(relativeNormal)},");
+                }
+            }
             if (Keyboard.current.numpad0Key.wasPressedThisFrame)
             {
                 var suit = Locator.GetPlayerSuit();
@@ -169,5 +192,7 @@ namespace EscapePodFour
             var gp = new Vector2(sp.x, Screen.height - sp.y);
             return gp;
         }
+        string Vector3ToJsonString(Vector3 v)
+            => $"{{\"x\": {v.x}, \"y\": {v.y}, \"z\": {v.z}}}";
     }
 }

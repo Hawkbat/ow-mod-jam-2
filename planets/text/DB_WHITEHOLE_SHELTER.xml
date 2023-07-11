@@ -1,0 +1,30 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>FOLI: Looks like everyone's still here. No critical injuries. Let's set up a temporary shelter. Keek?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>KEEK: I'm not detecting anything like those fish-like creatures we evaded. It appears they don't like entering these structures.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>PILEA: Wait, everyone turn off your lights for a second! ...There! Did you see that? Near the light beacon we dropped!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>KEEK: Some kind of insectoid? Doesn't look large enough to be a threat. What's it doing?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<Text>PILEA: It just jumped at the beacon. Here, let me try turning on my own light... Woah!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<Text>FOLI: Are you hurt, Pilea?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<Text>PILEA: Only startled. Hypothesis: these hopping creatures react strongly to light sources. I recommend that we learn from my example and keep our lights off for the time being.</Text>
+	</TextBlock>
+</NomaiObject>

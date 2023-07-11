@@ -1,0 +1,30 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>FOLI: To any Nomai who return to Escall's vessel looking for survivors: We are no longer here. I'm leaving this recording as evidence of what transpired here.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>FOLI: We managed to get most of the children and able-bodied adults into Escape Pods 1, 2, and 3. My husband, Kousa... I saw him board Pod 1. I can only hope he escaped this hellish place alive.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>FOLI: As for the rest of us, some of us were injured, or too infirm to board in time. And the bodies... Too many to identify. Our biochemist Pilea and a few others volunteered to help me tend to the survivors.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>FOLI: Until a moment ago, the status of Escape Pod 4 was undetermined. An engineer named Keek theorized we could repair it. My specialization is medical science, so I believed him. That was my error.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<Text>FOLI: The Pod has proved inoperable, so we're setting out with everyone we can. My immobile patients... I told them we'd be returning shortly. A false comfort, but all I can offer.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<Text>FOLI: Keek rigged a small support pod with supplies and most of our oxygen-generating plants. I don't expect the vessel's life support systems to hold much longer. Asphyxiation is a cruel death, but panic will only accelerate it.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<Text>FOLI: We're heading down, towards the vessel's tail. I noticed some kind of organic structure there that I hope can be repurposed as a shelter. Kousa... I hope you can one day forgive me.</Text>
+	</TextBlock>
+</NomaiObject>

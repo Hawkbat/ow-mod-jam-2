@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "DB_D_ENTRY",
+  "Orbit": {
+    "staticPosition": {
+      "x": 10000,
+      "y": 20000,
+      "z": -2000
+    },
+    "isStatic": true
+  },
+  "Bramble": {
+    "nodes": [
+      {
+        "name": "DB_N_ENTRY_TO_WHITEHOLE",
+        "linksTo": "DB_D_WHITEHOLE",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
+          "x": 60,
+          "y": 30,
+          "z": 30
+        }
+      }
+    ],
+    "dimension": {
+      "linksTo": "DB_VesselDimension",
+      "vinePrefab": "exitOnly",
+      "radius": 400,
+      "fogDensity": 4,
+      "fogTint": {
+        "r": 31,
+        "g": 255,
+        "b": 31
+      },
+      "allowedEntrances": [ 0 ]
+    }
+  },
+  "Props": {
+    "details": []
+  }
+}

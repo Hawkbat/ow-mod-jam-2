@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "DB_VesselDimension",
+  "Bramble": {
+    "nodes": [
+      {
+        "name": "DB_N_VESSEL_TO_ENTRY",
+        "linksTo": "DB_D_ENTRY",
+        "scale": 1,
+        "position": {
+          "x": 110.8455,
+          "y": -272.4044,
+          "z": -65.71346
+        },
+        "possibleExits": [
+          0,
+          2
+        ],
+        "fogTint": {
+          "r": 31,
+          "g": 255,
+          "b": 31
+        }
+      }
+    ]
+  },
+  "Props": {
+    "translatorText": [
+      {
+        "type": "preCrashRecorder",
+        "xmlFile": "planets/text/DB_VESSEL_RECORDING.xml",
+        "position": {
+          "x": 49.99878,
+          "y": -1.927639,
+          "z": -3.948596
+        },
+        "rotation": {
+          "x": 358.7315,
+          "y": 74.77451,
+          "z": 13.79979
+        }
+      }
+    ]
+  }
+}

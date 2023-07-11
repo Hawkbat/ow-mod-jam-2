@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+  "name": "DB_D_MININGSITE",
+  "Orbit": {
+    "staticPosition": {
+      "x": 10000,
+      "y": 20000,
+      "z": 6000
+    },
+    "isStatic": true
+  },
+  "Bramble": {
+    "dimension": {
+      "linksTo": "DB_N_WHITEHOLE_TO_MININGSITE",
+      "vinePrefab": "exitOnly",
+      "radius": 200,
+      "fogDensity": 3
+    }
+  },
+  "Props": {
+    "details": []
+  }
+}

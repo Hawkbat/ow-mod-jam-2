@@ -20,6 +20,8 @@ namespace EscapePodFour
 
         public override float SizeMultiplier => 1f;
 
+        public override bool IsEmittingLight() => PlayerState.IsFlashlightOn() && !PlayerState.IsInsideShip();
+
         protected override void UpdateScale(float newScale, float oldScale)
         {
             // Shamelessly adapted from https://github.com/Owen013/Smol-Hatchling/blob/master/Owen013.TeenyHatchling/SmolHatchlingController.cs

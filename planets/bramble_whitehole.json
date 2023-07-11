@@ -26,13 +26,36 @@
         },
         "fogTint": {
           "r": 255,
-          "g": 63,
-          "b": 63
+          "g": 0,
+          "b": 0
+        }
+      },
+      {
+        "name": "DB_N_WHITEHOLE_TO_FEEDGROUND",
+        "linksTo": "DB_D_FEEDGROUND",
+        "position": {
+          "x": 38.6723,
+          "y": 48.85529,
+          "z": 144.0094
         },
-        "lightTint": {
-          "r": 255,
-          "g": 63,
-          "b": 63
+        "rotation": {
+          "x": 341.6499,
+          "y": 189.2148,
+          "z": 337.8391
+        }
+      },
+      {
+        "name": "DB_N_WHITEHOLE_TO_MININGSITE",
+        "linksTo": "DB_D_MININGSITE",
+        "position": {
+          "x": 97.32934,
+          "y": -62.03559,
+          "z": -118.3333
+        },
+        "rotation": {
+          "x": 2.087734,
+          "y": 261.066,
+          "z": 221.3794
         }
       }
     ],
@@ -64,8 +87,8 @@
     "singularities": [
       {
         "type": "whiteHole",
-        "distortRadius": 150,
-        "horizonRadius": 60,
+        "distortRadius": 75,
+        "horizonRadius": 30,
         "position": {
           "x": 0,
           "y": 0,

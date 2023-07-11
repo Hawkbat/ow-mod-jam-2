@@ -12,10 +12,13 @@ namespace EscapePodFour
         public float Scale = 1f;
 
         public float Size { get => Scale * SizeMultiplier; set => Scale = value / SizeMultiplier; }
+        public FogWarpVolume CurrentWarpVolume => currentWarpVolume;
+        public FogWarpVolume PreviousWarpVolume => previousWarpVolume;
 
         float previousScale;
-
         FogWarpDetector warpDetector;
+
+        FogWarpVolume currentWarpVolume;
         FogWarpVolume previousWarpVolume;
 
         public abstract float SizeMultiplier { get; }
@@ -29,6 +32,11 @@ namespace EscapePodFour
                 warpDetector.OnTrackFogWarpVolume += WarpDetector_OnTrackFogWarpVolume;
                 warpDetector.OnUntrackFogWarpVolume += WarpDetector_OnUntrackFogWarpVolume;
             }
+        }
+
+        void Start()
+        {
+            currentWarpVolume = warpDetector.GetOuterFogWarpVolume();
         }
 
         protected virtual void OnDestroy()
@@ -49,6 +57,8 @@ namespace EscapePodFour
             }
         }
 
+        public abstract bool IsEmittingLight();
+
         protected virtual void UpdateScale(float newScale, float oldScale)
         {
             transform.localScale = Vector3.one * newScale;
@@ -58,6 +68,7 @@ namespace EscapePodFour
         {
             if (volume.IsOuterWarpVolume())
             {
+                currentWarpVolume = volume;
                 if (previousWarpVolume != null)
                 {
                     EscapePodFour.Log($"{name} entering {volume.transform.root.name} from {previousWarpVolume.transform.root.name}");
