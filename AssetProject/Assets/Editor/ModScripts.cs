@@ -24,7 +24,13 @@ public static class ModScripts
         var manifest = JsonUtility.FromJson<ManifestJson>(File.ReadAllText(manifestPath));
         var modOutputDirectory = Path.Combine(modOutputRootDirectory, manifest.uniqueName);
 
-        Directory.Delete(modOutputDirectory, true);
+        try
+        {
+            Directory.Delete(modOutputDirectory, true);
+        } catch (Exception ex)
+        {
+            Debug.LogError(ex.ToString());
+        }
         Directory.CreateDirectory(Path.Combine(modOutputDirectory));
         Directory.CreateDirectory(Path.Combine(modOutputDirectory, "assetbundles"));
         foreach (var path in Directory.EnumerateFiles(assetBundleDirectory))
@@ -35,7 +41,7 @@ public static class ModScripts
         foreach (var path in Directory.EnumerateFiles(rootDirectory))
         {
             var name = Path.GetFileName(path);
-            if (name.EndsWith(manifest.filename) || name == "default-config.json" || name == "manifest.json")
+            if (name.EndsWith(manifest.filename) || name == "default-config.json" || name == "manifest.json" || name == "tweaks.json")
             {
                 Copy(Path.Combine(rootDirectory, name), Path.Combine(modOutputDirectory, name));
             }
@@ -45,6 +51,12 @@ public static class ModScripts
         {
             var name = Path.GetFileName(path);
             Copy(Path.Combine(Path.Combine(rootDirectory, "planets"), name), Path.Combine(modOutputDirectory, "planets", name));
+        }
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory, "./planets/", "./text/"));
+        foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "./planets/", "./text/")))
+        {
+            var name = Path.GetFileName(path);
+            Copy(Path.Combine(Path.Combine(rootDirectory, "./planets/", "./text/"), name), Path.Combine(modOutputDirectory, "./planets/", "./text/", name));
         }
         Directory.CreateDirectory(Path.Combine(modOutputDirectory, "systems"));
         foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "systems")))
