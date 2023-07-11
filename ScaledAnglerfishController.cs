@@ -19,6 +19,8 @@ namespace EscapePodFour
 
         public static List<ScaledAnglerfishController> All = new();
 
+        public AnglerfishController Angler => angler;
+
         AnglerfishController angler;
 
         public override float SizeMultiplier => 50f;

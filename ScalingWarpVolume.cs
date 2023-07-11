@@ -34,11 +34,15 @@ namespace EscapePodFour
                 var scaleCtrl = detector.transform.root.GetComponent<ScaledCharacterController>();
                 if (scaleCtrl != null)
                 {
+                    scaleCtrl.TransitWarpVolume(warpVolume);
+
                     EscapePodFour.Log($"{detector.transform.root.name} changing scale by {ScaleChange} (Old: {scaleCtrl.Scale}, New: {scaleCtrl.Scale * ScaleChange})");
                     scaleCtrl.Scale *= ScaleChange;
+
                     if (scaleCtrl is ScaledShipController && PlayerState.IsAttached() && PlayerState.IsInsideShip())
                     {
-                        EscapePodFour.Log($"{EscapePodFour.ScaledPlayer.transform.root.name} changing scale by {ScaleChange} (Old: {scaleCtrl.Scale}, New: {scaleCtrl.Scale * ScaleChange})");
+                        var player = EscapePodFour.ScaledPlayer;
+                        EscapePodFour.Log($"{player.transform.root.name} changing scale by {ScaleChange} (Old: {player.Scale}, New: {player.Scale * ScaleChange})");
                         EscapePodFour.ScaledPlayer.Scale *= ScaleChange;
                     }
                 }

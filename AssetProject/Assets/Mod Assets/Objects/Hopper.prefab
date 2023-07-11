@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 4634889987845215991}
   - component: {fileID: 5971585236675835260}
   - component: {fileID: 8786323692709060437}
+  - component: {fileID: 5175381411958248627}
   m_Layer: 13
   m_Name: Detector
   m_TagString: Untagged
@@ -107,6 +108,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: 0
+--- !u!114 &5175381411958248627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526812697133686420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1397722380, guid: 9619b72cbfa42194d9f64b0713bf9365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3023839936513292811
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +177,6 @@ GameObject:
   - component: {fileID: 8202552760004756526}
   - component: {fileID: 2545219361460151375}
   - component: {fileID: 8132168334405317762}
-  - component: {fileID: 7300000330269442961}
   - component: {fileID: 7171511791632465801}
   m_Layer: 0
   m_Name: Hopper
@@ -239,18 +251,6 @@ MonoBehaviour:
   Scale: 1
   State: 0
   Target: {fileID: 0}
---- !u!114 &7300000330269442961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5785359429166555298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1397722380, guid: 9619b72cbfa42194d9f64b0713bf9365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7171511791632465801
 MonoBehaviour:
   m_ObjectHideFlags: 0

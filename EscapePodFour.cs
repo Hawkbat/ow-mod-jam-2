@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
+using NAudio.CoreAudioApi;
 using OWML.Common;
 using OWML.ModHelper;
 using UnityEngine;
@@ -121,6 +122,18 @@ namespace EscapePodFour
 
         void Update()
         {
+            if (ScaledProbe && ScaledProbe.Probe && !ScaledProbe.Probe.IsLaunched())
+            {
+                if (PlayerState.IsInsideShip() && PlayerState.IsAttached())
+                {
+                    ScaledProbe.Scale = ScaledShip.Scale;
+                }
+                else
+                {
+                    ScaledProbe.Scale = ScaledPlayer.Scale;
+                }
+            }
+
             if (Keyboard.current.numpadEnterKey.wasPressedThisFrame)
             {
                 var player = Locator.GetPlayerTransform();
@@ -160,7 +173,11 @@ namespace EscapePodFour
             }
             foreach (var h in HopperController.All)
             {
-                GUI.Label(new Rect(WorldToGui(h.transform.position), new Vector2(500f, 20f)), $"{h.name} x{h.Scale} ({h.State} {h.Target})");
+                GUI.Label(new Rect(WorldToGui(h.transform.position), new Vector2(500f, 20f)), $"{h.name} x{h.Scale} ({h.State} {(h.IsScared ? "fleeing" : "chasing")} {h.Target})");
+            }
+            foreach (var a in ScaledAnglerfishController.All)
+            {
+                GUI.Label(new Rect(WorldToGui(a.transform.position), new Vector2(500f, 20f)), $"{a.name} x{a.Scale} ({a.Angler.GetAnglerState()})");
             }
         }
 
@@ -179,7 +196,7 @@ namespace EscapePodFour
                 sphereShape.radius = volumeObj.GetComponent<SphereShape>().radius;
                 var gravityVolume = gravityObj.AddComponent<PolarForceVolume>();
                 gravityVolume._priority = 2;
-                gravityVolume._acceleration = -10f;
+                gravityVolume._acceleration = -4f;
                 gravityObj.SetActive(true);
             }
         }
