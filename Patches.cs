@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Epic.OnlineServices;
 using HarmonyLib;
 
 namespace EscapePodFour
@@ -10,6 +11,17 @@ namespace EscapePodFour
     [HarmonyPatch]
     public static class Patches
     {
+        static float debounceTime;
+
+        static void LogDebounced(string msg)
+        {
+            if (UnityEngine.Time.time > debounceTime)
+            {
+                debounceTime = UnityEngine.Time.time + 5f;
+                EscapePodFour.Log(msg);
+            }
+        }
+
         [HarmonyPrefix, HarmonyPatch(typeof(AnglerfishController), nameof(AnglerfishController.OnCaughtObject))]
         public static bool AnglerfishController_OnCaughtObject(AnglerfishController __instance, OWRigidbody caughtBody)
         {
@@ -18,20 +30,49 @@ namespace EscapePodFour
             var otherCtrl = caughtBody.GetComponent<ScaledCharacterController>();
             if (otherCtrl == null) return true;
 
-            if (otherCtrl.Size > scaleCtrl.Size * 0.5f) return false;
+            var canEat = otherCtrl.Size < scaleCtrl.Size * 0.5f;
+            LogDebounced($"[Angler Eat] Angler: ^{scaleCtrl.Size} Other: {otherCtrl} ^{otherCtrl.Size} Result: {canEat}");
+            if (!canEat)
+            {
+                return false;
+            }
             
             return true;
         }
 
-        [HarmonyPrefix, HarmonyPatch(typeof(FogWarpVolume), nameof(FogWarpVolume.WarpDetector))]
-        public static void FogWarpVolume_WarpDetector(FogWarpVolume __instance, FogWarpDetector detector, FogWarpVolume linkedWarpVolume)
+        [HarmonyPostfix, HarmonyPatch(typeof(FirstPersonManipulator), nameof(FirstPersonManipulator.GetFocusedOWItem))]
+        public static void FirstPersonManipulator_GetFocusedOWItem(ref OWItem __result)
         {
-            if (detector == null) EscapePodFour.LogError("detector NULL");
-            if (linkedWarpVolume == null) EscapePodFour.LogError("linkedWarpVolume NULL");
-            if (detector.GetOWRigidbody() == null) EscapePodFour.LogError("Detector OWRigidbody NULL");
-            if (__instance._attachedBody == null) EscapePodFour.LogError("_attachedBody NULL");
-            if (__instance._sector == null) EscapePodFour.LogError("_sector NULL");
-            if (__instance._sector.GetTriggerVolume() == null) EscapePodFour.LogError("_sector.GetTriggerVolume() NULL");
+            if (__result != null)
+            {
+                var item = __result;
+                var itemCtrl = item.GetComponent<ScaledItemController>();
+                if (itemCtrl == null) return;
+                var itemScale = itemCtrl.Scale;
+                var playerScale = EscapePodFour.ScaledPlayer.Scale;
+                var relativeScale = itemScale / playerScale;
+                if (relativeScale > 2f || relativeScale < 0.5f)
+                {
+                    __result = null;
+                }
+                LogDebounced($"[Focus Item] Player: x{playerScale} Item: {item} x{itemScale} Result: {__result}");
+            }
+        }
+
+        [HarmonyPostfix, HarmonyPatch(typeof(OWItemSocket), nameof(OWItemSocket.AcceptsItem))]
+        public static void OWItemSocket_AcceptsItem(OWItemSocket __instance, ref bool __result, OWItem item)
+        {
+            if (__result == false) return;
+            var itemCtrl = item.GetComponent<ScaledItemController>();
+            if (itemCtrl == null) return;
+            var socketScale = __instance.transform.lossyScale.z;
+            var itemScale = itemCtrl.Scale;
+            var relativeScale = itemScale / socketScale;
+            if (relativeScale > 1.2f || relativeScale < 0.8333f)
+            {
+                __result = false;
+            }
+            LogDebounced($"[Accepts Item] Socket: {__instance} x{socketScale} Item: {item} x{itemScale} Result: {__result}");
         }
     }
 }

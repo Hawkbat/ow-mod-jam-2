@@ -17,10 +17,17 @@
       "fogDensity": 3,
       "fogTint": {
         "r": 255,
-        "g": 0,
-        "b": 0
+        "g": 63,
+        "b": 63
       }
-    }
+    },
+    "nodes": [
+      {
+        "name": "DB_N_REDSEED_TO_GOAL",
+        "scale": 0.1,
+        "linksTo": "DB_D_GOAL"
+      }
+    ]
   },
   "Props": {
     "details": [
@@ -36,7 +43,8 @@
           "x": 305.6751,
           "y": 37.53132,
           "z": 330.5033
-        }
+        },
+        "keepLoaded": true
       },
       {
         "path": "Anglerfish_Body",
@@ -50,7 +58,8 @@
           "y": 42.2583,
           "z": 307.2383
         },
-        "scale": 0.05
+        "scale": 0.05,
+        "keepLoaded": true
       }
     ]
   }

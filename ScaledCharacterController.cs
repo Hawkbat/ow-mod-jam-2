@@ -7,28 +7,21 @@ using UnityEngine;
 
 namespace EscapePodFour
 {
-    public abstract class ScaledCharacterController : MonoBehaviour
+    public abstract class ScaledCharacterController : ScaledObjectController
     {
-        public float Scale = 1f;
-
-        public float Size { get => Scale * SizeMultiplier; set => Scale = value / SizeMultiplier; }
         public FogWarpVolume CurrentWarpVolume => currentWarpVolume;
         public FogWarpVolume PreviousWarpVolume => previousWarpVolume;
         public FogWarpVolume LastTransitWarpVolume => lastTransit;
 
         protected FogWarpDetector warpDetector;
-        
-        float previousScale;
 
         FogWarpVolume currentWarpVolume;
         FogWarpVolume previousWarpVolume;
         FogWarpVolume lastTransit;
 
-        public abstract float SizeMultiplier { get; }
-
-        protected virtual void Awake()
+        protected override void Awake()
         {
-            Scale = transform.localScale.z;
+            base.Awake();
             warpDetector = transform.root.GetComponentInChildren<FogWarpDetector>();
             if (warpDetector != null)
             {
@@ -42,6 +35,12 @@ namespace EscapePodFour
             if (warpDetector != null)
             {
                 currentWarpVolume = warpDetector.GetOuterFogWarpVolume();
+            } else
+            {
+                currentWarpVolume = transform
+                    .GetAttachedOWRigidbody()
+                    .GetOrigParentBody()
+                    .GetComponentInChildren<OuterFogWarpVolume>();
             }
         }
 
@@ -54,27 +53,18 @@ namespace EscapePodFour
             }
         }
 
-        protected virtual void FixedUpdate()
-        {
-            if (previousScale != Scale)
-            {
-                UpdateScale(Scale, previousScale);
-                previousScale = Scale;
-            }
-        }
-
         public virtual bool IsValidTarget() => IsEmittingLight();
 
         public abstract bool IsEmittingLight();
 
-        protected virtual void UpdateScale(float newScale, float oldScale)
-        {
-            transform.localScale = Vector3.one * newScale;
-        }
-
         public void TransitWarpVolume(FogWarpVolume volume)
         {
             lastTransit = volume;
+        }
+
+        protected virtual void OnChangeOuterWarpVolume(FogWarpVolume newVolume, FogWarpVolume oldVolume)
+        {
+
         }
 
         void WarpDetector_OnTrackFogWarpVolume(FogWarpVolume volume)
@@ -82,6 +72,7 @@ namespace EscapePodFour
             if (volume.IsOuterWarpVolume())
             {
                 currentWarpVolume = volume;
+                OnChangeOuterWarpVolume(currentWarpVolume, previousWarpVolume);
                 if (previousWarpVolume != null)
                 {
                     EscapePodFour.Log($"{name} entering {volume.transform.root.name} from {previousWarpVolume.transform.root.name}");

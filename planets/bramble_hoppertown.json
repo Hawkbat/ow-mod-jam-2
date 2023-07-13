@@ -18,6 +18,39 @@
     }
   },
   "Props": {
-    "details": []
+    "details": [
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_FossilCave/Interactables_FossilCave/Structure_DB_AnglerfishSkeleton/anglerfish_skeleton_head",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 1
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_FossilCave/Interactables_FossilCave/Structure_DB_AnglerfishSkeleton/anglerfish_skeleton_teeth",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 1
+      }
+    ],
+    "singularities": [
+      {
+        "type": "blackHole",
+        "uniqueID": "DB_BLACK_HOLE",
+        "pairedSingularity": "DB_WHITE_HOLE",
+        "distortRadius": 75,
+        "horizonRadius": 30,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": -100
+        }
+      }
+    ]
   }
 }

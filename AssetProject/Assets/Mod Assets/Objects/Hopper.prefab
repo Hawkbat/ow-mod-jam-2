@@ -33,6 +33,7 @@ GameObject:
   - component: {fileID: 5971585236675835260}
   - component: {fileID: 8786323692709060437}
   - component: {fileID: 5175381411958248627}
+  - component: {fileID: 2712572296863841127}
   m_Layer: 13
   m_Name: Detector
   m_TagString: Untagged
@@ -120,6 +121,24 @@ MonoBehaviour:
   m_Script: {fileID: 1397722380, guid: 9619b72cbfa42194d9f64b0713bf9365, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2712572296863841127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526812697133686420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d7fee243786b7a43aeb607db88d4b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collisionMode: 1
+  _layer: 1
+  _layerMask: -1
+  _pointChecksOnly: 0
+  _center: {x: 0, y: 0.5, z: 0}
+  _radius: 0.25
 --- !u!1 &3023839936513292811
 GameObject:
   m_ObjectHideFlags: 0

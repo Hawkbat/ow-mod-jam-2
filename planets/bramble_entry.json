@@ -27,14 +27,14 @@
       }
     ],
     "dimension": {
-      "linksTo": "DB_VesselDimension",
+      "linksTo": "DB_N_VESSEL_TO_ENTRY",
       "vinePrefab": "exitOnly",
       "radius": 400,
       "fogDensity": 4,
       "fogTint": {
-        "r": 31,
+        "r": 127,
         "g": 255,
-        "b": 31
+        "b": 127
       },
       "allowedEntrances": [ 0 ]
     }

@@ -1,27 +1,21 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "name": "DB_D_MININGSITE",
+  "name": "DB_D_GOAL",
   "Orbit": {
     "staticPosition": {
       "x": 10000,
       "y": 20000,
-      "z": 6000
+      "z": 10000
     },
     "isStatic": true
   },
   "Bramble": {
     "dimension": {
-      "linksTo": "DB_N_WHITEHOLE_TO_MININGSITE",
-      "vinePrefab": "exitOnly",
+      "linksTo": "DB_N_REDSEED_TO_GOAL",
+      "vinePrefab": "none",
       "radius": 200,
       "fogDensity": 3
-    },
-    "nodes": [
-      {
-        "name": "DB_N_MININGSITE_TO_WHITEHOLE",
-        "linksTo": "DB_D_WHITEHOLE"
-      }
-    ]
+    }
   },
   "Props": {
     "details": []

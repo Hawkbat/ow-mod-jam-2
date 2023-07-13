@@ -49,6 +49,8 @@ namespace EscapePodFour
 
         public override bool IsEmittingLight() => false;
 
+        public override float SizeMultiplier => 2f;
+
         protected override void Awake()
         {
             base.Awake();
@@ -65,25 +67,28 @@ namespace EscapePodFour
 
         protected override void Start()
         {
-            var sectorParent = body.GetOrigParent().GetComponentInParent<Sector>().transform;
+            var sector = body.GetOrigParent().GetComponentInParent<Sector>();
+            EnterSector(sector);
 
-            var sector = sectorParent.GetComponent<Sector>();
+            base.Start();
+        }
+
+        public void EnterSector(Sector sector)
+        {
             sectorDetector.AddSector(sector);
 
-            var volumeParent = sectorParent.Find("Volumes");
+            var volumeParent = sector.transform.Find("Volumes");
             var triggerVolumes = volumeParent.GetComponentsInChildren<OWTriggerVolume>();
             foreach (var triggerVolume in triggerVolumes)
             {
                 triggerVolume.AddObjectToVolume(gameObject);
             }
 
-            var warpVolumes = sectorParent.GetComponentsInChildren<FogWarpVolume>();
+            var warpVolumes = sector.transform.GetComponentsInChildren<FogWarpVolume>();
             foreach (var warpVolume in warpVolumes)
             {
                 warpDetector.TrackFogWarpVolume(warpVolume);
             }
-
-            base.Start();
         }
 
         void OnEnable()
@@ -95,8 +100,6 @@ namespace EscapePodFour
         {
             All.Remove(this);
         }
-
-        public override float SizeMultiplier => 2f;
 
         public float GetDetectionRadius(ScaledCharacterController target)
         {
@@ -152,9 +155,11 @@ namespace EscapePodFour
 
                             if (Target.CurrentWarpVolume != CurrentWarpVolume)
                             {
-                                EscapePodFour.Log($"Target exited volume, pursuing");
                                 var transit = Target.LastTransitWarpVolume;
-                                if (transit.IsOuterWarpVolume())
+                                if (transit == null)
+                                {
+                                    EscapePodFour.Log($"Target {Target} is in volume {Target.CurrentWarpVolume} not {CurrentWarpVolume} and has never warped");
+                                } else if (transit.IsOuterWarpVolume())
                                 {
                                     var closestExit = EscapePodFour.GetFogWarpExits()
                                         .Where(p => p.Item1 == transit)
@@ -163,13 +168,13 @@ namespace EscapePodFour
                                         .FirstOrDefault();
                                     if (closestExit != null)
                                     {
-                                        EscapePodFour.Log($"Target exited dimension, pursuing through {closestExit.transform.name}");
+                                        EscapePodFour.Log($"Target {Target} exited dimension, pursuing through {closestExit.transform.name}");
                                         targetTransform = closestExit.transform;
                                     }
 
                                 } else
                                 {
-                                    EscapePodFour.Log($"Target entered node, pursuing through {transit.transform.name}");
+                                    EscapePodFour.Log($"Target {Target} entered node, pursuing through {transit.transform.name}");
                                     targetTransform = transit.transform;
                                 }
                             }
@@ -262,9 +267,24 @@ namespace EscapePodFour
 
         void ImpactSensor_OnImpact(ImpactData impact)
         {
+            EscapePodFour.Log($"Hopper collided with {impact.otherBody}");
             if (impact.otherBody == Locator.GetPlayerBody() || impact.otherBody == Locator.GetShipBody())
             {
                 return;
+            }
+            var angler = impact.otherBody.GetComponentInParent<ScaledAnglerfishController>();
+            if (angler != null)
+            {
+                if (Size > angler.Size)
+                {
+                    EscapePodFour.Log($"Hopper x{Scale} ate Angler x{angler.Scale}");
+                    Destroy(angler.gameObject);
+                }
+                else
+                {
+                    EscapePodFour.Log($"Angler x{angler.Scale} ate Hopper x{Scale}");
+                    Destroy(gameObject);
+                }
             }
             body.SetVelocity(Vector3.zero);
             if (State == ActionState.Flying)

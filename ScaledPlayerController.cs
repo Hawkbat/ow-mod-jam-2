@@ -22,8 +22,16 @@ namespace EscapePodFour
 
         public override bool IsEmittingLight() => PlayerState.IsFlashlightOn() && !PlayerState.IsInsideShip();
 
+        void LateUpdate()
+        {
+            transform.localScale = Vector3.one;
+        }
+
         protected override void UpdateScale(float newScale, float oldScale)
         {
+            if (PlayerState.IsAttached())
+                newScale = 1f;
+
             // Shamelessly adapted from https://github.com/Owen013/Smol-Hatchling/blob/master/Owen013.TeenyHatchling/SmolHatchlingController.cs
             playerModel.transform.localScale = Vector3.one * newScale / 10f;
             playerModel.transform.localPosition = new Vector3(0, -1.03f, -0.2f * newScale);

@@ -107,6 +107,10 @@ namespace EscapePodFour
                     {
                         angler.gameObject.AddComponent<ScaledAnglerfishController>();
                     }
+                    foreach (var item in FindObjectsOfType<OWItem>())
+                    {
+                        item.gameObject.AddComponent<ScaledItemController>();
+                    }
                     foreach (var warpVolume in fogWarpVolumes)
                     {
                         warpVolume.gameObject.AddComponent<ScalingWarpVolume>();
@@ -153,6 +157,22 @@ namespace EscapePodFour
 ""normal"": {Vector3ToJsonString(relativeNormal)},");
                 }
             }
+            if (Keyboard.current.numpad8Key.wasPressedThisFrame)
+            {
+                ScaledPlayer.Scale *= 2f;
+            }
+            if (Keyboard.current.numpad2Key.wasPressedThisFrame)
+            {
+                ScaledPlayer.Scale *= 0.5f;
+            }
+            if (Keyboard.current.numpad9Key.wasPressedThisFrame)
+            {
+                ScaledShip.Scale *= 2f;
+            }
+            if (Keyboard.current.numpad3Key.wasPressedThisFrame)
+            {
+                ScaledShip.Scale *= 0.5f;
+            }
             if (Keyboard.current.numpad0Key.wasPressedThisFrame)
             {
                 var suit = Locator.GetPlayerSuit();
@@ -163,6 +183,11 @@ namespace EscapePodFour
 
         void OnGUI()
         {
+            GUILayout.BeginVertical();
+            if (ScaledPlayer) GUILayout.Label($"Player x{ScaledPlayer.Scale}");
+            if (ScaledShip) GUILayout.Label($"Ship x{ScaledShip.Scale}");
+            if (ScaledProbe) GUILayout.Label($"Probe x{ScaledProbe.Scale}");
+            GUILayout.EndVertical();
             foreach (var v in fogWarpVolumes)
             {
                 GUI.Label(new Rect(WorldToGui(v.transform.position), new Vector2(500f, 20f)), v.name);
@@ -178,6 +203,10 @@ namespace EscapePodFour
             foreach (var a in ScaledAnglerfishController.All)
             {
                 GUI.Label(new Rect(WorldToGui(a.transform.position), new Vector2(500f, 20f)), $"{a.name} x{a.Scale} ({a.Angler.GetAnglerState()})");
+            }
+            foreach (var i in ScaledItemController.All)
+            {
+                GUI.Label(new Rect(WorldToGui(i.transform.position), new Vector2(500f, 20f)), $"{i.name} x{i.Scale}");
             }
         }
 

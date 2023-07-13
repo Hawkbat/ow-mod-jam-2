@@ -30,14 +30,14 @@ namespace EscapePodFour
         protected override void UpdateScale(float newScale, float oldScale)
         {
             base.UpdateScale(newScale, oldScale);
-            var gradualScale = Mathf.Sqrt(Scale);
+            var gradualScale = Mathf.Sqrt(newScale);
             angler._acceleration = INITIAL_ACCELERATION * gradualScale;
             angler._arrivalDistance = INITIAL_ARRIVAL_DISTANCE * gradualScale;
             angler._chaseSpeed = INITIAL_CHASE_SPEED * gradualScale;
             angler._escapeDistance = INITIAL_ESCAPE_DISTANCE * gradualScale;
             angler._investigateSpeed = INITIAL_INVESTIGATE_SPEED * gradualScale;
             angler._pursueDistance = INITIAL_PURSUE_DISTANCE * gradualScale;
-            angler._mouthOffset = INITIAL_MOUTH_OFFSET * Scale;
+            angler._mouthOffset = INITIAL_MOUTH_OFFSET * newScale;
         }
 
         void OnEnable()

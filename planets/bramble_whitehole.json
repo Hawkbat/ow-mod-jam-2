@@ -26,8 +26,8 @@
         },
         "fogTint": {
           "r": 255,
-          "g": 0,
-          "b": 0
+          "g": 63,
+          "b": 63
         }
       },
       {
@@ -81,20 +81,22 @@
           "y": 37.53132,
           "z": 330.5033
         },
-        "scale": 5
+        "scale": 5,
+        "keepLoaded": true
       }
     ],
     "singularities": [
       {
         "type": "whiteHole",
+        "uniqueID": "DB_WHITE_HOLE",
+        "pairedSingularity": "DB_BLACK_HOLE",
         "distortRadius": 75,
         "horizonRadius": 30,
         "position": {
           "x": 0,
           "y": 0,
           "z": 0
-        },
-        "uniqueID": "DB_WHITE_HOLE"
+        }
       }
     ]
   }
