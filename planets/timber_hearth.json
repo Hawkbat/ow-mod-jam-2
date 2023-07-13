@@ -1,4 +1,32 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  "name": "TIMBER_HEARTH"
+  "name": "TIMBER_HEARTH",
+  "Bramble": {
+    "nodes": [
+      {
+        "name": "TH_CAMP_TO_REDSEED",
+        "linksTo": "D_D_REDSEED",
+        "position": {
+          "x": 16.0605,
+          "y": -46.8193,
+          "z": 300
+        },
+        "scale": 0.1
+      }
+    ]
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Exterior.prefab",
+        "position": {
+          "x": 16.0605,
+          "y": -46.8193,
+          "z": 300
+        },
+        "scale": 0.1
+      }
+    ]
+  }
 }
