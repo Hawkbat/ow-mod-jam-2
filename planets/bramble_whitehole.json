@@ -176,8 +176,58 @@
       },
       {
         "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Grow_Exterior.prefab",
+        "position": {
+          "x": 60.1829,
+          "y": 73.6216,
+          "z": 307.2382
+        },
+        "rotation": {
+          "x": 47.27332,
+          "y": 42.2583,
+          "z": 307.2383
+        },
+        "scale": 1
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Grow_Exterior.prefab",
+        "position": {
+          "x": 38.6723,
+          "y": 48.85529,
+          "z": 144.0094
+        },
+        "rotation": {
+          "x": 341.6499,
+          "y": 189.2148,
+          "z": 337.8391
+        },
+        "scale": 1.5
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Shrink_Exterior.prefab",
+        "position": {
+          "x": 93.8987,
+          "y": -62.03559,
+          "z": -118.3333
+        },
+        "rotation": {
+          "x": 277.4244,
+          "y": 142.3051,
+          "z": 0
+        },
+        "scale": 1
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
         "path": "Assets/Mod Assets/Objects/BrambleCaps_Interior.prefab",
         "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "rotation": {
           "x": 0,
           "y": 0,
           "z": 0

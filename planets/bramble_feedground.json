@@ -30,6 +30,27 @@
     ]
   },
   "Props": {
-    "details": []
+    "details": [
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Shrink_Interior.prefab",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 2
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Exterior.prefab",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 1.5
+      }
+    ]
   }
 }

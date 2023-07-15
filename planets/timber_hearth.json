@@ -32,30 +32,8 @@
       }
     ],
     "details": [
-      {
-        "assetBundle": "assetbundles/bundle",
-        "path": "Assets/Mod Assets/Objects/BrambleCaps_Exterior.prefab",
-        "position": {
-          "x": 16.0605,
-          "y": -46.8193,
-          "z": 300
-        },
-        "scale": 0.1
-      }
     ]
   },
   "Bramble": {
-    "nodes": [
-      {
-        "name": "TH_CAMP_TO_REDSEED",
-        "linksTo": "D_D_REDSEED",
-        "position": {
-          "x": 16.0605,
-          "y": -46.8193,
-          "z": 300
-        },
-        "scale": 0.1
-      }
-    ]
   }
 }
