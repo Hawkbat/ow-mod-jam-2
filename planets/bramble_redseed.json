@@ -60,6 +60,16 @@
         },
         "scale": 0.05,
         "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Interior.prefab",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 1
       }
     ]
   }
