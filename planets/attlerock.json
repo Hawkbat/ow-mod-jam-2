@@ -15,5 +15,19 @@
         "possibleExits": [ 0, 2 ]
       }
     ]
+  },
+  "Props": {
+    "details": [
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Exterior.prefab",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 22
+        },
+        "scale": .5
+      }
+    ]
   }
 }

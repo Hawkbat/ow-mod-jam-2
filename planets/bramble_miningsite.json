@@ -43,7 +43,17 @@
       },
       {
         "assetBundle": "assetbundles/bundle",
-        "path": "Assets/Mod Assets/Objects/BrambleCaps_Interior.prefab",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Grow_Interior.prefab",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 1
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_Shrink_Exterior.prefab",
         "position": {
           "x": 0,
           "y": 0,
@@ -107,6 +117,7 @@
           "z": 171.452
         }
       }
+
     ]
   }
 }
