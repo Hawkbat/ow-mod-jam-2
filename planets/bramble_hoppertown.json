@@ -20,22 +20,42 @@
   "Props": {
     "details": [
       {
-        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_FossilCave/Interactables_FossilCave/Structure_DB_AnglerfishSkeleton/anglerfish_skeleton_head",
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/HopperTown.prefab",
         "position": {
           "x": 0,
           "y": 0,
           "z": 0
         },
-        "scale": 1
+        "scale": 100
+      },
+      {
+        "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_FossilCave/Interactables_FossilCave/Structure_DB_AnglerfishSkeleton/anglerfish_skeleton_head",
+        "position": {
+          "x": 0,
+          "y": 31,
+          "z": -22
+        },
+        "rotation": {
+          "x": 20,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 0.5
       },
       {
         "path": "CaveTwin_Body/Sector_CaveTwin/Sector_SouthHemisphere/Sector_SouthUnderground/Sector_FossilCave/Interactables_FossilCave/Structure_DB_AnglerfishSkeleton/anglerfish_skeleton_teeth",
         "position": {
           "x": 0,
+          "y": 31,
+          "z": -22
+        },
+        "rotation": {
+          "x": 20,
           "y": 0,
           "z": 0
         },
-        "scale": 1
+        "scale": 0.5
       },
       {
         "assetBundle": "assetbundles/bundle",
@@ -59,6 +79,60 @@
           "x": 0,
           "y": 0,
           "z": -250
+        }
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "wall",
+        "xmlFile": "planets/text/DB_HOPPERTOWN_SKELETON_TEXT.xml",
+        "position": {
+          "x": -10.29061,
+          "y": 14.82034,
+          "z": 37.4901
+        },
+        "rotation": {
+          "x": 336.6874,
+          "y": 270,
+          "z": 90
+        },
+        "normal": {
+          "x": 0,
+          "y": 0,
+          "z": -1
+        }
+      },
+      {
+        "type": "wall",
+        "xmlFile": "planets/text/DB_HOPPERTOWN_SIZE_TEXT.xml",
+        "position": {
+          "x": 8.650799,
+          "y": 17.11335,
+          "z": 1.341777
+        },
+        "rotation": {
+          "x": 303.0749,
+          "y": 90,
+          "z": 90
+        },
+        "normal": {
+          "x": 0,
+          "y": 0,
+          "z": 1
+        }
+      },
+      {
+        "type": "preCrashRecorder",
+        "xmlFile": "planets/text/DB_HOPPERTOWN_RED_SEED_RECORDING.xml",
+        "position": {
+          "x": 13.21393,
+          "y": 16.64619,
+          "z": 1.839405
+        },
+        "rotation": {
+          "x": 0,
+          "y": 12.61369,
+          "z": 0
         }
       }
     ]

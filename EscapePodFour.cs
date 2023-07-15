@@ -115,13 +115,14 @@ namespace EscapePodFour
                     {
                         warpVolume.gameObject.AddComponent<ScalingWarpVolume>();
                     }
+
+                    ModHelper.Events.Unity.FireOnNextUpdate(() =>
+                    {
+                        var giantScroll = ScaledItemController.All.Find(s => s.name == "GIANT_SCROLL");
+                        giantScroll.Scale = 4f;
+                    });
                 });
             };
-        }
-
-        private void WarpVolume_OnWarpDetector(FogWarpDetector detector)
-        {
-            throw new System.NotImplementedException();
         }
 
         void Update()
@@ -212,7 +213,7 @@ namespace EscapePodFour
 
         void OnBodyLoaded(string bodyName)
         {
-            if (bodyName == "DB_D_WHITEHOLE")
+            /*if (bodyName == "DB_D_WHITEHOLE")
             {
                 var root = newHorizons.GetPlanet(bodyName).transform;
                 var volumeObj = root.Find("Sector/Volumes/ZeroG_Fluid_Audio_Volume").gameObject;
@@ -227,7 +228,7 @@ namespace EscapePodFour
                 gravityVolume._priority = 2;
                 gravityVolume._acceleration = -4f;
                 gravityObj.SetActive(true);
-            }
+            }*/
         }
 
         void DrawWorldLabel(Component component, string text)

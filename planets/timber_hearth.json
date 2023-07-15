@@ -2,35 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "TIMBER_HEARTH",
   "Props": {
-    "translatorText": [
-      {
-        "type": "whiteboard",
-        "position": {
-          "x": 16.23174,
-          "y": -49.87454,
-          "z": 183.5216
-        },
-        "rotation": {
-          "x": 287.459,
-          "y": 35.72471,
-          "z": 150.3415
-        }
-      },
-      {
-        "type": "scroll",
-        "xmlFile": "planets/text/DB_SHELTER_HOPPER_RECORDING.xml",
-        "position": {
-          "x": 14.21353,
-          "y": -46.90525,
-          "z": 184.4711
-        },
-        "rotation": {
-          "x": 1.111446,
-          "y": 94.46073,
-          "z": 104.0238
-        }
-      }
-    ],
+    "translatorText": [],
     "details": [
       {
         "assetBundle": "assetbundles/bundle",

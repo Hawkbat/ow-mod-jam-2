@@ -5,6 +5,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
+		<ParentID>1</ParentID>
 		<Text>PILEA: They seem to all be coming and going from a specific location: the <![CDATA[<color=orange>Red Seed</color>]]>.</Text>
 	</TextBlock>
 	<TextBlock>

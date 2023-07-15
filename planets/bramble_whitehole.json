@@ -15,14 +15,14 @@
         "name": "DB_N_WHITEHOLE_TO_REDSEED",
         "linksTo": "DB_D_REDSEED",
         "position": {
-          "x": 60.1829,
-          "y": 73.6216,
-          "z": 307.2382
+          "x": -93.81525,
+          "y": -38.19904,
+          "z": -129.1219
         },
         "rotation": {
-          "x": 47.27332,
-          "y": 42.2583,
-          "z": 307.2383
+          "x": 12.81962,
+          "y": 274.5097,
+          "z": 267.8125
         },
         "fogTint": {
           "r": 255,
@@ -77,6 +77,21 @@
   },
   "Props": {
     "details": [
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/ResearchStation.prefab",
+        "position": {
+          "x": -180.5374,
+          "y": 88.7387,
+          "z": -77.5265
+        },
+        "rotation": {
+          "x": 73.0877,
+          "y": 287.1334,
+          "z": 180.0001
+        },
+        "scale": 1
+      },
       {
         "assetBundle": "assetbundles/bundle",
         "path": "Assets/Mod Assets/Objects/Hopper.prefab",
@@ -212,6 +227,48 @@
           "x": 352.7308,
           "y": 135.1643,
           "z": 346.983
+        }
+      },
+      {
+        "type": "scroll",
+        "xmlFile": "planets/text/DB_RESEARCH_RED_SEED_SCROLL.xml",
+        "position": {
+          "x": -179.8425,
+          "y": 87.96725,
+          "z": -78.02405
+        },
+        "rotation": {
+          "x": 331.4785,
+          "y": 26.64436,
+          "z": 250.6651
+        },
+        "rename": "GIANT_SCROLL"
+      },
+      {
+        "type": "whiteboard",
+        "position": {
+          "x": -174.7461,
+          "y": 82.69411,
+          "z": -73.61478
+        },
+        "rotation": {
+          "x": 325.6485,
+          "y": 185.139,
+          "z": 110.6319
+        }
+      },
+      {
+        "type": "preCrashRecorder",
+        "xmlFile": "planets/text/DB_RESEARCH_MIGRATE_RECORDING.xml",
+        "position": {
+          "x": -181.7164,
+          "y": 82.45159,
+          "z": -81.76109
+        },
+        "rotation": {
+          "x": 10.27327,
+          "y": 349.2139,
+          "z": 281.6719
         }
       }
     ],

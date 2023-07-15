@@ -14,7 +14,8 @@
       "linksTo": "DB_N_WHITEHOLE_TO_MININGSITE",
       "vinePrefab": "exitOnly",
       "radius": 200,
-      "fogDensity": 3
+      "fogDensity": 3,
+      "allowedEntrances": [0]
     },
     "nodes": [
       {
@@ -27,6 +28,21 @@
     "details": [
       {
         "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/MiningTown.prefab",
+        "position": {
+          "x": -2.715256,
+          "y": -73.43815,
+          "z": -9.089302
+        },
+        "rotation": {
+          "x": 9.336882,
+          "y": 330.7161,
+          "z": 170.0041
+        },
+        "scale": 1
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
         "path": "Assets/Mod Assets/Objects/BrambleCaps_Interior.prefab",
         "position": {
           "x": 0,
@@ -34,6 +50,62 @@
           "z": 0
         },
         "scale": 1
+      },
+      {
+        "path": "EscapePodFlare_Body",
+        "position": {
+          "x": -0.8740637,
+          "y": -75.65519,
+          "z": -21.17087
+        },
+        "rotation": {
+          "x": 356.0227,
+          "y": 271.4444,
+          "z": 166.9362
+        }
+      },
+      {
+        "path": "EscapePodFlare_Body",
+        "position": {
+          "x": -6.940258,
+          "y": -70.44362,
+          "z": -16.09479
+        },
+        "rotation": {
+          "x": 20.63337,
+          "y": 240.9366,
+          "z": 156.7102
+        }
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "preCrashRecorder",
+        "xmlFile": "planets/text/DB_MININGSITE_SHRINK_RECORDING.xml",
+        "position": {
+          "x": -3.241807,
+          "y": -72.00149,
+          "z": -15.1104
+        },
+        "rotation": {
+          "x": 351.3851,
+          "y": 250.2285,
+          "z": 161.8896
+        }
+      },
+      {
+        "type": "preCrashRecorder",
+        "xmlFile": "planets/text/DB_MININGSITE_RED_SEED_RECORDING.xml",
+        "position": {
+          "x": 2.636115,
+          "y": -70.46572,
+          "z": -18.38308
+        },
+        "rotation": {
+          "x": 10.67649,
+          "y": 339.0337,
+          "z": 171.452
+        }
       }
     ]
   }
