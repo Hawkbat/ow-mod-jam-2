@@ -1,0 +1,38 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>FOLI: Pilea, Keek, it's time. Is everyone in your groups ready to depart?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>PILEA: The children are scared; they've never gone far from the settlement before. But they're as ready as they can be.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>KEEK: We're ready to go too. Maybe it would be best to use the singularity exit. Longer, but fewer scares for the little ones.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>FOLI: I'd prefer not to waste the resources on a detour, but... you're right. Okay, everyone, listen up!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<Text>FOLI: As our brothers, sisters, parents, and grandparents of Escall's clan did, we will venture into the furthest reaches of space, where no Nomai has tread!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<Text>FOLI: We must leave the safety of the known in order to quantify the unknown! To observe, to study, that is our calling!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<Text>FOLI: What lies beyond the <![CDATA[<color=orange>Red Seed</color>]]>... Will be ours to discover. Our legacy.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>8</ID>
+		<Text>FOLI: And we leave nobody behind.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>9</ID>
+		<Text>FOLI: ...I will never make that mistake again.</Text>
+	</TextBlock>
+</NomaiObject>

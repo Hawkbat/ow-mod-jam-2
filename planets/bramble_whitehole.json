@@ -83,6 +83,62 @@
         },
         "scale": 5,
         "keepLoaded": true
+      },
+      {
+        "path": "EscapePodFlare_Body",
+        "position": {
+          "x": 99.47923,
+          "y": -179.5072,
+          "z": 43.59476
+        },
+        "rotation": {
+          "x": 344.6479,
+          "y": 128.5273,
+          "z": 325.8918
+        }
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/DynamicProps/Tree_Body/Props_NOM_NomaiTree_Var_1 (5)",
+        "position": {
+          "x": 96.32072,
+          "y": -180.9623,
+          "z": 45.19361
+        },
+        "rotation": {
+          "x": 337.8957,
+          "y": 117.2902,
+          "z": 329.5165
+        }
+      }
+    ],
+    "translatorText": [
+      {
+        "type": "whiteboard",
+        "xmlFile": "planets/text/DB_SHELTER_RED_SEED_TEXT.xml",
+        "position": {
+          "x": 94.60129,
+          "y": -179.8674,
+          "z": 51.84255
+        },
+        "rotation": {
+          "x": 358.6274,
+          "y": 131.8105,
+          "z": 331.8253
+        }
+      },
+      {
+        "type": "preCrashRecorder",
+        "xmlFile": "planets/text/DB_SHELTER_HOPPER_RECORDING.xml",
+        "position": {
+          "x": 105.1169,
+          "y": -176.9776,
+          "z": 42.65616
+        },
+        "rotation": {
+          "x": 352.7308,
+          "y": 135.1643,
+          "z": 346.983
+        }
       }
     ],
     "singularities": [
@@ -96,6 +152,19 @@
           "x": 0,
           "y": 0,
           "z": 0
+        }
+      }
+    ]
+  },
+  "Volumes": {
+    "oxygenVolumes": [
+      {
+        "treeVolume": true,
+        "radius": 15,
+        "position": {
+          "x": 96.32072,
+          "y": -180.9623,
+          "z": 45.19361
         }
       }
     ]

@@ -1,0 +1,18 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>PILEA: I've been learning a lot about the insectoid creatures here since we build this observation post. I'm calling them "hoppers" since they, well, hop around.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>PILEA: For instance, I've learned that that will travel between seeds to chase prey or flee from predators, unlike the anglerfish, which seem to be more territorial.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>PILEA: As we've seen, they are highly reactive to light. I hypothesize they have evolved in reaction to the presence of anglerfish.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>PILEA: I'll log any additional findings here as I discover them. Learning the xenobiology of this place is the best way I can help.</Text>
+	</TextBlock>
+</NomaiObject>

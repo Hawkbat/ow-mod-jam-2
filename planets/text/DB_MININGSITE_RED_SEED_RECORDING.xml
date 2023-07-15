@@ -1,0 +1,18 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>FOLI: Everyone remain adhesive! Don't lose sight of your group leader!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>FOLI: We'll need to make use of this seed's unique properties to make the journey to our final destination.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>FOLI: Keek, thank you. We couldn't have managed this without your engineering ingenuity.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>KEEK: Same to you, Foli. After everything that's happened since the crash, I'm glad I could contribute.</Text>
+	</TextBlock>
+</NomaiObject>

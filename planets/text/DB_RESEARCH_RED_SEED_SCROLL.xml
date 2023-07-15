@@ -1,0 +1,30 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>PILEA: I've learned something very interesting about the hoppers' migratory patterns!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>PILEA: They seem to all be coming and going from a specific location: the <![CDATA[<color=orange>Red Seed</color>]]>.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>FOLI: What do you think is on the other side of it?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>2</ParentID>
+		<Text>KEEK: I think I can assemble a probe we can send through it. It'll require reusing some materials from the mining project.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>FOLI: Take whatever you need. If there's something that could save us from the spatial fluctuations there, investigating is top priority.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>3</ParentID>
+		<Text>PILEA: No way to know for sure, but I'm very excited to find out!</Text>
+	</TextBlock>
+</NomaiObject>

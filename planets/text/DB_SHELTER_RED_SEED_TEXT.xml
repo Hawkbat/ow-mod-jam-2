@@ -1,0 +1,27 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>FOLI: Let's log our scouting reports here for a location to build a more permanent settlement. The spatial fluctuations from this singularity are a serious long-term risk.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>PILEA: The area on the other side of one of these organic portals (I'm calling them "seeds" due to their appearance) has more of these creatures inhabiting it, but we should be able to slip past them easily enough.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>FOLI: The "seed" I explored was fairly empty, just a tangle of vines and another portal. Let's investigate yours further.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>1</ParentID>
+		<Text>FOLI: Keek, I know you explained verbally already, but please log the results of your survey of the other seed here.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>KEEK: Fine. <![CDATA[<color=orange>"Red Seed"</color>]]> Survey Status: <![CDATA[<color=red>IMMINENT DANGER, OFF LIMITS</color>]]>.
+	</Text>
+	</TextBlock>
+</NomaiObject>

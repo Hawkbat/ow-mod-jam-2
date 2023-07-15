@@ -18,7 +18,7 @@
       },
       {
         "type": "scroll",
-        "xmlFile": "planets/text/DB_WHITEHOLE_SHELTER.xml",
+        "xmlFile": "planets/text/DB_SHELTER_HOPPER_RECORDING.xml",
         "position": {
           "x": 14.21353,
           "y": -46.90525,

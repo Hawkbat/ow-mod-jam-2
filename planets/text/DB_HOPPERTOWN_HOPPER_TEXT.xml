@@ -1,0 +1,34 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>PILEA: Now remember, children, the path to our settlement may be scary, but just remember to stay big!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>PILEA: The hoppers and anglerfish aren't so scary when they're smaller than you! But don't get too large or you won't fit in the town anymore!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>PILEA: Now what do we do if we're too small?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>TAXUS: Go through the black hole!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<Text>TSUGA: Ask a bigger Nomai for help!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>4</ParentID>
+		<Text>PILEA: Yes! If it's safe to do so, the black hole will let you keep your bigger size when you return!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<ParentID>5</ParentID>
+		<Text>PILEA: Also correct! If it's not safe to travel, a bigger Nomai can scare off the hoppers for you!</Text>
+	</TextBlock>
+</NomaiObject>

@@ -1,0 +1,18 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>KEEK: A quick reminder for anyone on material transport duty: don't take the exterior exits from this seed.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<Text>KEEK: Any size changes as a result of crossing the thresholds between seeds will normally be undone if you return the way you came.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<Text>KEEK: You might not even notice the changes normally, but conveniently for us, this seed is connected a little differently than most.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<Text>KEEK: Using this method should make transporting materials to <![CDATA[<color=orange>Hopper Town</color>]]> easy as Pi.</Text>
+	</TextBlock>
+</NomaiObject>
