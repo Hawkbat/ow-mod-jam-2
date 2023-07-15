@@ -13,7 +13,7 @@
     "dimension": {
       "linksTo": "DB_N_WHITEHOLE_TO_FEEDGROUND",
       "vinePrefab": "none",
-      "radius": 200,
+      "radius": 400,
       "fogDensity": 3
     }
   },
@@ -48,7 +48,7 @@
         "position": {
           "x": 0,
           "y": 0,
-          "z": -100
+          "z": -250
         }
       }
     ]

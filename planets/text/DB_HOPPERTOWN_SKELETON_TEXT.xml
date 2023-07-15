@@ -1,0 +1,36 @@
+﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>FOLI: So what happened to this hopper, do we think?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>PILEA: My guess is it came here chasing after its prey, got stuck, and eventually starved.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>FOLI: Stuck? It should've been able to leave the way it came, right?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>KEEK: The spatial distortions in this place are very irregular. I hypothesize it's possible for the space to expand with creatures still in it, making them too big to fit through the exits.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>FOLI: So even away from the white hole, we're still not safe. That's... frustrating.</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>6</ID>
+		<ParentID>4</ParentID>
+		<Text>PILEA: Maybe it coincides with growth spurts in the seeds themselves?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>7</ID>
+		<ParentID>4</ParentID>
+		<Text>KEEK: Either way, this seed appears fairly stable now. But I imagine we'll need to address it eventually.</Text>
+	</TextBlock>
+</NomaiObject>

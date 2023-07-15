@@ -15,9 +15,9 @@
         "name": "DB_N_WHITEHOLE_TO_REDSEED",
         "linksTo": "DB_D_REDSEED",
         "position": {
-          "x": -88.08582,
-          "y": -201.3546,
-          "z": 14.40182
+          "x": 60.1829,
+          "y": 73.6216,
+          "z": 307.2382
         },
         "rotation": {
           "x": 47.27332,
@@ -28,7 +28,8 @@
           "r": 255,
           "g": 63,
           "b": 63
-        }
+        },
+        "possibleExits": [ 1 ]
       },
       {
         "name": "DB_N_WHITEHOLE_TO_FEEDGROUND",
@@ -42,20 +43,27 @@
           "x": 341.6499,
           "y": 189.2148,
           "z": 337.8391
-        }
+        },
+        "fogTint": {
+          "r": 127,
+          "g": 255,
+          "b": 127
+        },
+        "scale": 1.5,
+        "possibleExits": [ 2 ]
       },
       {
         "name": "DB_N_WHITEHOLE_TO_MININGSITE",
         "linksTo": "DB_D_MININGSITE",
         "position": {
-          "x": 97.32934,
+          "x": 93.8987,
           "y": -62.03559,
           "z": -118.3333
         },
         "rotation": {
-          "x": 2.087734,
-          "y": 261.066,
-          "z": 221.3794
+          "x": 277.4244,
+          "y": 142.3051,
+          "z": 0
         }
       }
     ],
@@ -63,7 +71,8 @@
       "linksTo": "TM_N_WHITEHOLE",
       "vinePrefab": "smallNest",
       "radius": 200,
-      "fogDensity": 3
+      "fogDensity": 3,
+      "allowedEntrances": [0]
     }
   },
   "Props": {
@@ -87,14 +96,53 @@
       {
         "path": "EscapePodFlare_Body",
         "position": {
-          "x": 99.47923,
-          "y": -179.5072,
-          "z": 43.59476
+          "x": 144.2662,
+          "y": -154.2838,
+          "z": 15.52644
         },
         "rotation": {
-          "x": 344.6479,
-          "y": 128.5273,
-          "z": 325.8918
+          "x": 352.7553,
+          "y": 155.1676,
+          "z": 320.1143
+        }
+      },
+      {
+        "path": "EscapePodFlare_Body",
+        "position": {
+          "x": 118.6058,
+          "y": -169.8966,
+          "z": 15.21365
+        },
+        "rotation": {
+          "x": 333.3167,
+          "y": 143.5485,
+          "z": 325.2677
+        }
+      },
+      {
+        "path": "EscapePodFlare_Body",
+        "position": {
+          "x": 128.9202,
+          "y": -162.7856,
+          "z": 8.963036
+        },
+        "rotation": {
+          "x": 344.2858,
+          "y": 164.0371,
+          "z": 345.0267
+        }
+      },
+      {
+        "path": "EscapePodFlare_Body",
+        "position": {
+          "x": 156.5685,
+          "y": -141.6215,
+          "z": 6.84317
+        },
+        "rotation": {
+          "x": 38.19537,
+          "y": 326.08,
+          "z": 51.83398
         }
       },
       {
@@ -109,6 +157,22 @@
           "y": 117.2902,
           "z": 329.5165
         }
+      },
+      {
+        "path": "DB_ExitOnlyDimension_Body/Sector_ExitOnlyDimension/Interactables_ExitOnlyDimension/InnerWarp_ToExitOnly/Terrain_DB_BrambleSphere_Inner_v2",
+        "position": {
+          "x": 77.9189,
+          "y": -213.8225,
+          "z": 69.6242
+        },
+        "rotation": {
+          "x": 12.9616,
+          "y": 112.6843,
+          "z": 342.7148
+        },
+        "removeChildren": [
+          "fogbackdrop_v2"
+        ]
       }
     ],
     "translatorText": [

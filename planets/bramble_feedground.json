@@ -10,23 +10,24 @@
     "isStatic": true
   },
   "Bramble": {
-    "nodes": [
-      {
-        "name": "DB_N_FEEDGROUND_TO_HOPPERTOWN",
-        "linksTo": "DB_D_HOPPERTOWN"
-      }
-    ],
     "dimension": {
       "linksTo": "DB_N_WHITEHOLE_TO_FEEDGROUND",
       "vinePrefab": "smallNest",
-      "radius": 200,
+      "radius": 400,
       "fogTint": {
-        "r": 63,
+        "r": 127,
         "g": 255,
-        "b": 63
+        "b": 127
       },
       "fogDensity": 3
-    }
+    },
+    "nodes": [
+      {
+        "name": "DB_N_FEEDGROUND_TO_HOPPERTOWN",
+        "linksTo": "DB_D_HOPPERTOWN",
+        "scale": 1.5
+      }
+    ]
   },
   "Props": {
     "details": []
