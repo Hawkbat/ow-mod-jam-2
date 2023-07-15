@@ -24,7 +24,10 @@ namespace EscapePodFour
 
         void LateUpdate()
         {
-            transform.localScale = Vector3.one;
+            if (transform.parent == null)
+                transform.localScale = Vector3.one;
+            else
+                transform.SetWorldScale(Vector3.one);
         }
 
         protected override void UpdateScale(float newScale, float oldScale)

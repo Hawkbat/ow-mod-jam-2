@@ -267,7 +267,6 @@ namespace EscapePodFour
 
         void ImpactSensor_OnImpact(ImpactData impact)
         {
-            EscapePodFour.Log($"Hopper collided with {impact.otherBody}");
             if (impact.otherBody == Locator.GetPlayerBody() || impact.otherBody == Locator.GetShipBody())
             {
                 return;

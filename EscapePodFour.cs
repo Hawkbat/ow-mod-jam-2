@@ -190,23 +190,23 @@ namespace EscapePodFour
             GUILayout.EndVertical();
             foreach (var v in fogWarpVolumes)
             {
-                GUI.Label(new Rect(WorldToGui(v.transform.position), new Vector2(500f, 20f)), v.name);
+                DrawWorldLabel(v, v.name);
                 foreach (var e in v._exits)
                 {
-                    GUI.Label(new Rect(WorldToGui(v.GetExitPosition(e)), new Vector2(500f, 20f)), e.name);
+                    DrawWorldLabel(v.GetExitPosition(e), e.name);
                 }
             }
             foreach (var h in HopperController.All)
             {
-                GUI.Label(new Rect(WorldToGui(h.transform.position), new Vector2(500f, 20f)), $"{h.name} x{h.Scale} ({h.State} {(h.IsScared ? "fleeing" : "chasing")} {h.Target})");
+                DrawWorldLabel(h, $"{h.name} x{h.Scale} ({h.State} {(h.Target ? h.IsScared ? "fleeing" : "chasing" : "")} {h.Target})");
             }
             foreach (var a in ScaledAnglerfishController.All)
             {
-                GUI.Label(new Rect(WorldToGui(a.transform.position), new Vector2(500f, 20f)), $"{a.name} x{a.Scale} ({a.Angler.GetAnglerState()})");
+                DrawWorldLabel(a, $"{a.name} x{a.Scale} ({a.Angler.GetAnglerState()})");
             }
             foreach (var i in ScaledItemController.All)
             {
-                GUI.Label(new Rect(WorldToGui(i.transform.position), new Vector2(500f, 20f)), $"{i.name} x{i.Scale}");
+                DrawWorldLabel(i, $"{i.name} x{i.Scale}");
             }
         }
 
@@ -228,6 +228,19 @@ namespace EscapePodFour
                 gravityVolume._acceleration = -4f;
                 gravityObj.SetActive(true);
             }
+        }
+
+        void DrawWorldLabel(Component component, string text)
+        {
+            DrawWorldLabel(component.transform.position, text);
+        }
+
+        void DrawWorldLabel(Vector3 worldPos, string text)
+        {
+            var c = Locator.GetPlayerCamera();
+            var d = Vector3.Distance(c.transform.position, worldPos);
+            if (d > 1000f) return;
+            GUI.Label(new Rect(WorldToGui(worldPos), new Vector2(500f, 20f)), text);
         }
 
         Vector2 WorldToGui(Vector3 wp)

@@ -74,5 +74,11 @@ namespace EscapePodFour
             }
             LogDebounced($"[Accepts Item] Socket: {__instance} x{socketScale} Item: {item} x{itemScale} Result: {__result}");
         }
+
+        [HarmonyPrefix, HarmonyPatch(typeof(HighSpeedImpactSensor), nameof(HighSpeedImpactSensor.HandlePlayerInsideShip))]
+        public static bool HighSpeedImpactSensor_HandlePlayerInsideShip()
+        {
+            return false;
+        }
     }
 }
