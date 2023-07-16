@@ -23,7 +23,8 @@ namespace EscapePodFour
         const float LANDING_RAYCAST_LENGTH = 1f;
 
         const float JUMP_FORCE = 20f;
-        const float MAX_JUMP_CONE = 1f;
+        const float CHASE_JUMP_CONE = 1f;
+        const float FLEE_JUMP_CONE = 0.5f;
         const float REST_VELOCITY_LIMIT = 0.1f;
         
         const float PLAYER_DETECTION_RADIUS = 100f;
@@ -185,15 +186,17 @@ namespace EscapePodFour
                             }
 
                             var targetDir = (targetTransform.position - transform.position).normalized;
+                            var jumpCone = CHASE_JUMP_CONE;
                             if (scared)
                             {
                                 targetDir = -targetDir;
+                                jumpCone = FLEE_JUMP_CONE;
                             }
-                            if (Vector3.Dot(up, targetDir) < 1f - MAX_JUMP_CONE)
+                            if (Vector3.Dot(up, targetDir) < 1f - jumpCone)
                             {
                                 var plane = new Plane(up, Vector3.zero);
                                 var flatDir = plane.ClosestPointOnPlane(targetDir).normalized;
-                                targetDir = Vector3.Slerp(up, flatDir, MAX_JUMP_CONE);
+                                targetDir = Vector3.Slerp(up, flatDir, jumpCone);
                             }
                             body.AddVelocityChange(targetDir * JUMP_FORCE * Scale);
                             ChangeState(ActionState.Flying);

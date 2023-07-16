@@ -163,6 +163,19 @@
         }
       },
       {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/DynamicProps/Tree_Body/Props_NOM_NomaiTree_Var_1 (5)",
+        "position": {
+          "x": -177.5554,
+          "y": 88.87598,
+          "z": -71.54306
+        },
+        "rotation": {
+          "x": 24.62461,
+          "y": 205.1445,
+          "z": 108.6635
+        }
+      },
+      {
         "path": "DB_ExitOnlyDimension_Body/Sector_ExitOnlyDimension/Interactables_ExitOnlyDimension/InnerWarp_ToExitOnly/Terrain_DB_BrambleSphere_Inner_v2",
         "position": {
           "x": 77.9189,
@@ -489,6 +502,15 @@
           "x": 96.32072,
           "y": -180.9623,
           "z": 45.19361
+        }
+      },
+      {
+        "treeVolume": true,
+        "radius": 15,
+        "position": {
+          "x": -177.5554,
+          "y": 88.87598,
+          "z": -71.54306
         }
       }
     ]

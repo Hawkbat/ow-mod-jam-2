@@ -70,6 +70,32 @@
           "z": 0
         },
         "scale": 2
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/DynamicProps/Tree_Body/Props_NOM_NomaiTree_Var_1 (5)",
+        "position": {
+          "x": -8.456153,
+          "y": 13.97091,
+          "z": 27.5791
+        },
+        "rotation": {
+          "x": 0,
+          "y": 35.53848,
+          "z": 0
+        }
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/DynamicProps/Tree_Body/Props_NOM_NomaiTree_Var_1 (5)",
+        "position": {
+          "x": 10.58142,
+          "y": 16.64617,
+          "z": 5.298316
+        },
+        "rotation": {
+          "x": 0,
+          "y": 308.3015,
+          "z": 0
+        }
       }
     ],
     "singularities": [
@@ -110,14 +136,14 @@
         "type": "wall",
         "xmlFile": "planets/text/DB_HOPPERTOWN_SIZE_TEXT.xml",
         "position": {
-          "x": 8.650799,
-          "y": 17.11335,
-          "z": 1.341777
+          "x": -10.13986,
+          "y": 12.08491,
+          "z": 37.71781
         },
         "rotation": {
-          "x": 303.0749,
-          "y": 90,
-          "z": 90
+          "x": 273.063,
+          "y": 90.00011,
+          "z": 89.99992
         },
         "normal": {
           "x": 0,
@@ -129,14 +155,36 @@
         "type": "preCrashRecorder",
         "xmlFile": "planets/text/DB_HOPPERTOWN_RED_SEED_RECORDING.xml",
         "position": {
-          "x": 13.21393,
-          "y": 16.64619,
-          "z": 1.839405
+          "x": 8.4181,
+          "y": 16.64618,
+          "z": 3.789088
         },
         "rotation": {
           "x": 0,
-          "y": 12.61369,
+          "y": 270.0262,
           "z": 0
+        }
+      }
+    ]
+  },
+  "Volumes": {
+    "oxygenVolumes": [
+      {
+        "treeVolume": true,
+        "radius": 15,
+        "position": {
+          "x": -8.456153,
+          "y": 13.97091,
+          "z": 27.5791
+        }
+      },
+      {
+        "treeVolume": true,
+        "radius": 15,
+        "position": {
+          "x": 10.58142,
+          "y": 16.64617,
+          "z": 5.298316
         }
       }
     ]

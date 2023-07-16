@@ -13,7 +13,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
-		<Text>KEEK: Using this method should make transporting materials to <![CDATA[<color=orange>Hopper Town</color>]]> easy as Pi.</Text>
+		<Text>KEEK: Using this method to miniaturize shipments should make transporting materials to <![CDATA[<color=orange>Hopper Town</color>]]> easy as Pi.</Text>
 	</TextBlock>
 	<ShipLogConditions>
 		<RevealFact>

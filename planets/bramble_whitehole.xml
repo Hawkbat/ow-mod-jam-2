@@ -40,11 +40,6 @@
 			<ID>DB_RESEARCH_E_HOPPERS_LIGHT</ID>
 			<Text>The hopper insects chase or flee from sources of light.</Text>
 		</ExploreFact>
-
-		<ExploreFact>
-			<ID>DB_SHELTER_E_REDSEED</ID>
-			<Text>The Nomai set up a temporary shelter near a white hole.</Text>
-		</ExploreFact>
 		
 	</Entry>
 </AstroObjectEntry>

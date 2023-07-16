@@ -42,7 +42,12 @@
 
 		<ExploreFact>
 			<ID>DB_REDSEED_E_GOAL</ID>
-			<Text>The seed contains another, strange looking seed. The opening is too small for your ship to enter.</Text>
+			<Text>The glowing red seed contains another seed covered in a strange device. The opening is too small for your ship to enter.</Text>
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>DB_REDSEED_E_MORETOEXPLORE</ID>
+			<Text>You shouldn't be able to see this.</Text>
 		</ExploreFact>
 	</Entry>
 </AstroObjectEntry>

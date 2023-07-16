@@ -40,7 +40,7 @@
         "reveals": [ "DB_REDSEED_E_GOAL" ],
         "revealOn": "enter",
         "revealFor": "both",
-        "radius": 50,
+        "radius": 150,
         "position": {
           "x": 0,
           "y": 0,

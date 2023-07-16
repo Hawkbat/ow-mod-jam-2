@@ -90,6 +90,19 @@
           "y": 240.9366,
           "z": 156.7102
         }
+      },
+      {
+        "path": "DB_VesselDimension_Body/Sector_VesselDimension/Sector_VesselBridge/Interactibles_VesselBridge/DynamicProps/Tree_Body/Props_NOM_NomaiTree_Var_1 (5)",
+        "position": {
+          "x": -0.4540579,
+          "y": -69.75463,
+          "z": -20.45514
+        },
+        "rotation": {
+          "x": 12.39924,
+          "y": 43.18465,
+          "z": 185.7431
+        }
       }
     ],
     "translatorText": [
@@ -122,6 +135,19 @@
         }
       }
 
+    ]
+  },
+  "Volumes": {
+    "oxygenVolumes": [
+      {
+        "treeVolume": true,
+        "radius": 15,
+        "position": {
+          "x": -0.4540579,
+          "y": -69.75463,
+          "z": -20.45514
+        }
+      }
     ]
   }
 }
