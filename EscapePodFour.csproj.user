@@ -1,5 +1,5 @@
 ﻿<Project>
   <PropertyGroup>
-    <OutputPath>$(AppData)\OuterWildsModManager\OWML\Mods\Hawkbar.EscapePodFour</OutputPath>
+    <OutputPath>$(AppData)\OuterWildsModManager\OWML\Mods\Hawkbar.TheSurvivors</OutputPath>
   </PropertyGroup>
 </Project>

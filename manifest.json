@@ -1,9 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
   "filename": "EscapePodFour.dll",
-  "author": "Hawkbar",
-  "name": "Escape Pod Four",
-  "uniqueName": "Hawkbar.EscapePodFour",
+  "author": "The Wrong Warp Team",
+  "name": "The Survivors",
+  "uniqueName": "Hawkbar.TheSurvivors",
   "version": "0.1.0",
   "owmlVersion": "2.9.1",
   "dependencies": ["xen.NewHorizons"]
