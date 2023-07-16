@@ -50,6 +50,86 @@
           "z": 0
         },
         "scale": 1.5
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -197.9502,
+          "y": -231.9792,
+          "z": 172.0242
+        },
+        "rotation": {
+          "x": 61.61217,
+          "y": 41.31382,
+          "z": 204.1551
+        },
+        "scale": 4,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -295.472,
+          "y": 177.2096,
+          "z": -225.897
+        },
+        "rotation": {
+          "x": 10.53379,
+          "y": 2.999553,
+          "z": 255.2502
+        },
+        "scale": 4.5,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -113.3971,
+          "y": -132.1621,
+          "z": -178.1215
+        },
+        "rotation": {
+          "x": 3.808935,
+          "y": 169.1373,
+          "z": 41.50476
+        },
+        "scale": 4,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -305.5746,
+          "y": 18.55617,
+          "z": 81.19659
+        },
+        "rotation": {
+          "x": 351.3994,
+          "y": 175.899,
+          "z": 156.7537
+        },
+        "scale": 5,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": 18.36024,
+          "y": -111.1279,
+          "z": -0.1580219
+        },
+        "rotation": {
+          "x": 37.15408,
+          "y": 291.9716,
+          "z": 172.6152
+        },
+        "scale": 4.5,
+        "keepLoaded": true
       }
     ]
   }
