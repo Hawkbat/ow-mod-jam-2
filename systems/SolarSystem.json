@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+  "entryPositions": [
+    {
+      "id": "DB_REDSEED",
+      "position": {
+        "x": 1000,
+        "y": -1100
+      }
+    },
+    {
+      "id": "DB_SHELTER",
+      "position": {
+        "x": 800,
+        "y": -1400
+      }
+    },
+    {
+      "id": "DB_RESEARCH",
+      "position": {
+        "x": 900,
+        "y": -850
+      }
+    },
+    {
+      "id": "DB_HOPPERTOWN",
+      "position": {
+        "x": 500,
+        "y": -1250
+      }
+    },
+    {
+      "id": "DB_MININGSITE",
+      "position": {
+        "x": 700,
+        "y": -1000
+      }
+    },
+    {
+      "id": "TIMBER_MOON_SEED",
+      "position": {
+        "x": 700,
+        "y": -1000
+      }
+    }
+  ],
+  "curiosities": [
+    {
+      "id": "DB_REDSEED",
+      "color": {
+        "r": 255,
+        "g": 63,
+        "b": 63,
+        "a": 255
+      },
+      "highlightColor": {
+        "r": 255,
+        "g": 127,
+        "b": 127,
+        "a": 255
+      }
+    }
+  ],
+  "initialReveal": []
+}

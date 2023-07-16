@@ -1,0 +1,15 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>DB_D_MININGSITE</ID>
+
+	<Entry>
+		<ID>DB_MININGSITE</ID>
+		<Name>Mining Site</Name>
+
+		<Curiosity>DB_REDSEED</Curiosity>
+
+		<ExploreFact>
+			<ID>DB_MININGSITE_E_SHRINK</ID>
+			<Text>The mining site is connected to other seeds in a way that allows for retaining changes in size, as long as you don't use the exterior exits.</Text>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

@@ -5,7 +5,7 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>2</ID>
-		<Text>FOLI: We'll need to make use of this seed's unique properties to make the journey to our final destination.</Text>
+		<Text>FOLI: We'll need to make use of this seed's unique properties to make the journey through the <![CDATA[<color=orange>Red Seed</color>]]>.</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>3</ID>
@@ -15,4 +15,10 @@
 		<ID>4</ID>
 		<Text>KEEK: Same to you, Foli. After everything that's happened since the crash, I'm glad I could contribute.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_REDSEED_R_MININGSITE</FactID>
+			<Condition>2</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

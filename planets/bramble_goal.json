@@ -17,6 +17,21 @@
       "fogDensity": 3
     }
   },
+  "Volumes": {
+    "creditsVolume": [
+      {
+        "creditsType": "fast",
+        "deathType": "meditation",
+        "gameOverText": "The End",
+        "radius": 1000,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ]
+  },
   "Props": {
     "details": []
   }

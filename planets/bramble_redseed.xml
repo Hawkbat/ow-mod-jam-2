@@ -18,10 +18,26 @@
 
 		<RumorFact>
 			<ID>DB_REDSEED_R_RESEARCH</ID>
-			<SourceID></SourceID>
+			<SourceID>DB_RESEARCH</SourceID>
 			<RumorName>The Red Seed</RumorName>
 			<RumorNamePriority>1</RumorNamePriority>
 			<Text>The Nomai observed the hoppers entering and exiting the glowing red bramble seed.</Text>
+		</RumorFact>
+
+		<RumorFact>
+			<ID>DB_REDSEED_R_MININGSITE</ID>
+			<SourceID>DB_MININGSITE</SourceID>
+			<RumorName>The Red Seed</RumorName>
+			<RumorNamePriority>1</RumorNamePriority>
+			<Text>The Nomai used the unique properties of the Mining Site's seed when traveling through the red bramble seed.</Text>
+		</RumorFact>
+
+		<RumorFact>
+			<ID>DB_REDSEED_R_HOPPERTOWN</ID>
+			<SourceID>DB_HOPPERTOWN</SourceID>
+			<RumorName>The Red Seed</RumorName>
+			<RumorNamePriority>1</RumorNamePriority>
+			<Text>The Nomai set out with their entire population to explore the other side of the red bramble seed.</Text>
 		</RumorFact>
 
 		<ExploreFact>

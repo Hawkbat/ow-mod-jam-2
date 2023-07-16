@@ -33,4 +33,10 @@
 		<ParentID>4</ParentID>
 		<Text>KEEK: Either way, this seed appears fairly stable now. But I imagine we'll need to address it eventually.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_HOPPERTOWN_E_SKELETON</FactID>
+			<Condition>2</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

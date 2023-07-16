@@ -9,5 +9,8 @@
 			<Page>So I'm gonna have this recorder playing on loop and toss it in until I can't hear it anymore.</Page>
 			<Page>If this ends up so deep I can't reach it, well, I guess I'll send someone after it later.</Page>
 		</Dialogue>
+		<RevealFacts>
+			<FactID>ATTLEROCK_R_WHITEHOLE</FactID>
+		</RevealFacts>
 	</DialogueNode>
 </DialogueTree>

@@ -33,6 +33,21 @@
       }
     ]
   },
+  "Volumes": {
+    "revealVolumes": [
+      {
+        "reveals": [ "DB_REDSEED_E_GOAL" ],
+        "revealOn": "enter",
+        "revealFor": "both",
+        "radius": 50,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ]
+  },
   "Props": {
     "details": [
       {

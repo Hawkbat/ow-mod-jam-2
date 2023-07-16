@@ -1,6 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "TIMBER_MOON",
+  "ShipLog": {
+    "xmlFile": "planets/attlerock.xml"
+  },
   "Bramble": {
     "nodes": [
       {
@@ -26,7 +29,22 @@
           "y": 0,
           "z": 22
         },
-        "scale": .5
+        "scale": 0.5
+      }
+    ]
+  },
+  "Volumes": {
+    "revealVolumes": [
+      {
+        "reveals": [ "ATTLEROCK_E_SEED" ],
+        "revealFor": "both",
+        "revealOn": "enter",
+        "radius": 100,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 22
+        }
       }
     ]
   }

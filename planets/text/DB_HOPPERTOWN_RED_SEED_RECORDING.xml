@@ -35,4 +35,10 @@
 		<ID>9</ID>
 		<Text>FOLI: ...I will never make that mistake again.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_REDSEED_R_HOPPERTOWN</FactID>
+			<Condition>7</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

@@ -15,4 +15,16 @@
 		<ID>4</ID>
 		<Text>KEEK: Using this method should make transporting materials to <![CDATA[<color=orange>Hopper Town</color>]]> easy as Pi.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_MININGSITE_E_SHRINK</FactID>
+			<Condition>3</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_HOPPERTOWN_R_MININGSITE</FactID>
+			<Condition>4</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

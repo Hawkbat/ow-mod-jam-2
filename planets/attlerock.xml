@@ -1,0 +1,23 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>TIMBER_MOON</ID>
+
+	<Entry>
+		<ID>TIMBER_MOON_SEED</ID>
+		<Name>Attlerock Seed</Name>
+
+		<Curiosity>DB_REDSEED</Curiosity>
+
+		<RumorFact>
+			<ID>ATTLEROCK_R_WHITEHOLE</ID>
+			<SourceID>DB_SHELTER</SourceID>
+			<RumorName>Attlerock Seed</RumorName>
+			<RumorNamePriority>0</RumorNamePriority>
+			<Text>Esker tossed a recorder into what sounds like a bramble seed.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>ATTLEROCK_E_SEED</ID>
+			<Text>There is a bramble seed on the Attlerock.</Text>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

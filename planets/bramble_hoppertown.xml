@@ -1,0 +1,33 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>DB_D_HOPPERTOWN</ID>
+
+	<Entry>
+		<ID>DB_HOPPERTOWN</ID>
+		<Name>Hopper Town</Name>
+
+		<Curiosity>DB_REDSEED</Curiosity>
+
+		<RumorFact>
+			<ID>DB_HOPPERTOWN_R_MININGSITE</ID>
+			<SourceID>DB_MININGSITE</SourceID>
+			<RumorName>Hopper Town</RumorName>
+			<RumorNamePriority>0</RumorNamePriority>
+			<Text>The Nomai transported materials from the mining site to a settlement called Hopper Town.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>DB_HOPPERTOWN_E_BLACKHOLE</ID>
+			<Text>Traveling through the black hole near Hopper Town will allow you to retain an increase in your size.</Text>
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>DB_HOPPERTOWN_E_BIG</ID>
+			<Text>The hoppers and anglerfish cannot eat you if you are larger than them. The hoppers will flee from larger objects.</Text>
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>DB_HOPPERTOWN_E_SKELETON</ID>
+			<Text>Hoppers can eat anglerfish if they are large enough. Dark Bramble experiences spatial distortions that can cause objects to permanently increase or decrease in size.</Text>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

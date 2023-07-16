@@ -15,10 +15,12 @@
 	</TextBlock>
 	<TextBlock>
 		<ID>4</ID>
+		<ParentID>3</ParentID>
 		<Text>TAXUS: Go through the black hole!</Text>
 	</TextBlock>
 	<TextBlock>
 		<ID>5</ID>
+		<ParentID>3</ParentID>
 		<Text>TSUGA: Ask a bigger Nomai for help!</Text>
 	</TextBlock>
 	<TextBlock>
@@ -31,4 +33,16 @@
 		<ParentID>5</ParentID>
 		<Text>PILEA: Also correct! If it's not safe to travel, a bigger Nomai can scare off the hoppers for you!</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_HOPPERTOWN_E_BLACKHOLE</FactID>
+			<Condition>6</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_HOPPERTOWN_E_BIG</FactID>
+			<Condition>7</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

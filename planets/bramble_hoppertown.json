@@ -1,6 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "DB_D_HOPPERTOWN",
+  "ShipLog": {
+    "xmlFile": "planets/bramble_hoppertown.xml"
+  },
   "Orbit": {
     "staticPosition": {
       "x": 10000,
@@ -11,7 +14,7 @@
   },
   "Bramble": {
     "dimension": {
-      "linksTo": "DB_N_WHITEHOLE_TO_FEEDGROUND",
+      "linksTo": "DB_N_FEEDGROUND_TO_HOPPERTOWN",
       "vinePrefab": "none",
       "radius": 400,
       "fogDensity": 3
