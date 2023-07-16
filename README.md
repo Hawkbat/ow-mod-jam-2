@@ -1,6 +1,6 @@
 # The Survivors
 
-![A logo depicting a spiky object with text overlaid that says "The Survivors"](logo.jpg)
+![A logo depicting a spiky object with text overlaid that says "The Survivors"](Logo.jpg)
 
 A short story mod for Outer Wilds. A Nomai recording has been added to the Vessel.
 
