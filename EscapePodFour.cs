@@ -16,6 +16,8 @@ namespace EscapePodFour
         static INewHorizons newHorizons;
         static Tweaks tweaks;
 
+        public static bool DebugMode;
+
         public static ScaledPlayerController ScaledPlayer;
         public static ScaledShipController ScaledShip;
         public static ScaledProbeController ScaledProbe;
@@ -59,6 +61,12 @@ namespace EscapePodFour
 
         public static void LogSucess(string msg)
             => instance.ModHelper.Console.WriteLine(msg, MessageType.Success);
+
+        public override void Configure(IModConfig config)
+        {
+            base.Configure(config);
+            DebugMode = config.GetSettingsValue<bool>("Debug Mode");
+        }
 
         void Awake()
         {
@@ -133,6 +141,8 @@ namespace EscapePodFour
                 }
             }
 
+            if (!DebugMode) return;
+
             if (Keyboard.current.numpadEnterKey.wasPressedThisFrame)
             {
                 var player = Locator.GetPlayerTransform();
@@ -178,6 +188,7 @@ namespace EscapePodFour
 
         void OnGUI()
         {
+            if (!DebugMode) return;
             GUILayout.BeginVertical();
             if (ScaledPlayer) GUILayout.Label($"Player x{ScaledPlayer.Scale}");
             if (ScaledShip) GUILayout.Label($"Ship x{ScaledShip.Scale}");
