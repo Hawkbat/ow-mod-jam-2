@@ -50,7 +50,6 @@
         "scale": 0.05,
         "keepLoaded": true
       },
-   
       {
         "assetBundle": "assetbundles/bundle",
         "path": "Assets/Mod Assets/Objects/BrambleCaps_Shrink_Interior.prefab",
