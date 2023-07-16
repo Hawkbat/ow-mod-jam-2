@@ -70,6 +70,12 @@ public static class ModScripts
             var name = Path.GetFileName(path);
             Copy(Path.Combine(Path.Combine(rootDirectory, "translations"), name), Path.Combine(modOutputDirectory, "translations", name));
         }
+        Directory.CreateDirectory(Path.Combine(modOutputDirectory, "icons"));
+        foreach (var path in Directory.EnumerateFiles(Path.Combine(rootDirectory, "icons")))
+        {
+            var name = Path.GetFileName(path);
+            Copy(Path.Combine(Path.Combine(rootDirectory, "icons"), name), Path.Combine(modOutputDirectory, "icons", name));
+        }
         try
         {
             Copy(Path.Combine(rootDirectory, "./AssetProject/Assets/Plugins/", manifest.filename), Path.Combine(modOutputDirectory, manifest.filename));

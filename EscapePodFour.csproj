@@ -33,6 +33,9 @@
     <None Include="translations\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="icons\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <Compile Remove="AssetProject\**" />
     <EmbeddedResource Remove="AssetProject\**" />
     <None Remove="AssetProject\**" />

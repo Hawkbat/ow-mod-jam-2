@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "DB_D_WHITEHOLE",
   "ShipLog": {
-    "xmlFile": "planets/bramble_whitehole.xml"
+    "xmlFile": "planets/bramble_whitehole.xml",
+    "spriteFolder": "icons"
   },
   "Orbit": {
     "staticPosition": {
@@ -76,7 +77,7 @@
       "vinePrefab": "smallNest",
       "radius": 200,
       "fogDensity": 3,
-      "allowedEntrances": [0]
+      "allowedEntrances": [ 0 ]
     }
   },
   "Props": {
@@ -334,6 +335,31 @@
         "scale": 4,
         "hasPhysics": true,
         "physicsRadius": 0.1
+      },
+      {
+        "path": "Anglerfish_Body/Beast_Anglerfish",
+        "scale": 0.02,
+        "removeChildren": [
+          "B_angler_root/B_angler_body01/B_angler_body02/B_angler_antenna01/B_angler_antenna02/B_angler_antenna03/B_angler_antenna04/B_angler_antenna05/B_angler_antenna06/B_angler_antenna07/B_angler_antenna08/B_angler_antenna09/B_angler_antenna10/B_angler_antenna11/B_angler_antenna12_end"
+        ],
+        "rename": "Ernesto",
+        "position": {
+          "x": 61.0273,
+          "y": -203.4994,
+          "z": 58.6733
+        },
+        "rotation": {
+          "x": 63.86187,
+          "y": 292.6368,
+          "z": 65.3678
+        }
+      },
+      {
+        "path": "Anglerfish_Body/Beast_Anglerfish_Collision",
+        "parentPath": "Sector/Ernesto",
+        "isRelativeToParent": true,
+        "scale": 0.02,
+        "rename": "ErnestoCollision"
       }
     ],
     "dialogue": [
@@ -349,6 +375,13 @@
         },
         "radius": 2,
         "range": 4
+      },
+      {
+        "parentPath": "Sector/Ernesto",
+        "isRelativeToParent": true,
+        "xmlFile": "planets/text/DIALOGUE_ERNESTO.xml",
+        "radius": 1.5,
+        "pathToAnimController": "Sector/Ernesto"
       }
     ],
     "translatorText": [
@@ -439,6 +472,15 @@
     ]
   },
   "Volumes": {
+    "audioVolumes": [
+      {
+        "parentPath": "Sector/Ernesto",
+        "isRelativeToParent": true,
+        "audio": "KazooTheme",
+        "loop": true,
+        "radius": 5
+      }
+    ],
     "oxygenVolumes": [
       {
         "treeVolume": true,

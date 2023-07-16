@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "DB_D_REDSEED",
   "ShipLog": {
-    "xmlFile": "planets/bramble_redseed.xml"
+    "xmlFile": "planets/bramble_redseed.xml",
+    "spriteFolder": "icons"
   },
   "Orbit": {
     "staticPosition": {
