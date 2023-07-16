@@ -9,7 +9,7 @@
 
 		<RumorFact>
 			<ID>DB_SHELTER_R_VESSEL</ID>
-			<SourceID></SourceID>
+			<SourceID>DB_VESSEL</SourceID>
 			<RumorName>Shelter</RumorName>
 			<RumorNamePriority>0</RumorNamePriority>
 			<Text>The Nomai were searching for shelter through a seed near the Vessel.</Text>

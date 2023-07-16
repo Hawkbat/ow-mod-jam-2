@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "DB_D_MININGSITE",
   "ShipLog": {
-    "xmlFile": "planets/bramble_miningsite.xml"
+    "xmlFile": "planets/bramble_miningsite.xml",
+    "spriteFolder": "icons"
   },
   "Orbit": {
     "staticPosition": {

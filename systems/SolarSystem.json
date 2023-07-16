@@ -4,43 +4,43 @@
     {
       "id": "DB_REDSEED",
       "position": {
-        "x": 1000,
-        "y": -1100
+        "x": 0,
+        "y": -1800
       }
     },
     {
       "id": "DB_SHELTER",
       "position": {
-        "x": 800,
+        "x": 0,
         "y": -1400
       }
     },
     {
       "id": "DB_RESEARCH",
       "position": {
-        "x": 900,
-        "y": -850
+        "x": 300,
+        "y": -1450
       }
     },
     {
       "id": "DB_HOPPERTOWN",
       "position": {
-        "x": 500,
-        "y": -1250
+        "x": 600,
+        "y": -1900
       }
     },
     {
       "id": "DB_MININGSITE",
       "position": {
-        "x": 700,
-        "y": -1000
+        "x": 300,
+        "y": -2100
       }
     },
     {
       "id": "TIMBER_MOON_SEED",
       "position": {
-        "x": 700,
-        "y": -1000
+        "x": 400,
+        "y": -1200
       }
     }
   ],
@@ -50,13 +50,13 @@
       "color": {
         "r": 255,
         "g": 63,
-        "b": 63,
+        "b": 15,
         "a": 255
       },
       "highlightColor": {
         "r": 255,
         "g": 127,
-        "b": 127,
+        "b": 31,
         "a": 255
       }
     }
