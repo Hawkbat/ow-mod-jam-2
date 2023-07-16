@@ -15,4 +15,17 @@
 		<ID>4</ID>
 		<Text>PILEA: I'll log any additional findings here as I discover them. Learning the xenobiology of this place is the best way I can help.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_RESEARCH_E_HOPPERS_CHASE</FactID>
+			<Condition>2</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_RESEARCH_E_HOPPERS_LIGHT</FactID>
+			<Condition>3</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+	
 </NomaiObject>

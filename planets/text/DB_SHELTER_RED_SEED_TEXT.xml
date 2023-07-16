@@ -24,4 +24,10 @@
 		<Text>KEEK: Fine. <![CDATA[<color=orange>"Red Seed"</color>]]> Survey Status: <![CDATA[<color=red>IMMINENT DANGER, OFF LIMITS</color>]]>.
 	</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_REDSEED_R_SHELTER</FactID>
+			<Condition>5</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

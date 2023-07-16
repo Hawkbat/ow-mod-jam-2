@@ -1,0 +1,32 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>DB_D_REDSEED</ID>
+
+	<Entry>
+		<ID>DB_REDSEED</ID>
+		<Name>The Red Seed</Name>
+
+		<Curiosity>DB_REDSEED</Curiosity>
+		<IsCuriosity/>
+
+		<RumorFact>
+			<ID>DB_REDSEED_R_SHELTER</ID>
+			<SourceID>DB_SHELTER</SourceID>
+			<RumorName>The "Red Seed"</RumorName>
+			<RumorNamePriority>0</RumorNamePriority>
+			<Text>The Nomai scouted out a glowing red bramble seed and determined it was dangerous to enter.</Text>
+		</RumorFact>
+
+		<RumorFact>
+			<ID>DB_REDSEED_R_RESEARCH</ID>
+			<SourceID></SourceID>
+			<RumorName>The Red Seed</RumorName>
+			<RumorNamePriority>1</RumorNamePriority>
+			<Text>The Nomai observed the hoppers entering and exiting the glowing red bramble seed.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>DB_REDSEED_E_GOAL</ID>
+			<Text>The seed contains another, strange looking seed. The opening is too small for your ship to enter.</Text>
+		</ExploreFact>
+	</Entry>
+</AstroObjectEntry>

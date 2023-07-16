@@ -1,6 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "DB_D_WHITEHOLE",
+  "ShipLog": {
+    "xmlFile": "planets/bramble_whitehole.xml"
+  },
   "Orbit": {
     "staticPosition": {
       "x": 10000,
@@ -91,22 +94,6 @@
           "z": 180.0001
         },
         "scale": 1
-      },
-      {
-        "assetBundle": "assetbundles/bundle",
-        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
-        "position": {
-          "x": -19.93126,
-          "y": -159.7918,
-          "z": 118.1644
-        },
-        "rotation": {
-          "x": 305.6751,
-          "y": 37.53132,
-          "z": 330.5033
-        },
-        "scale": 5,
-        "keepLoaded": true
       },
       {
         "path": "EscapePodFlare_Body",
@@ -248,6 +235,55 @@
           "z": 0
         },
         "scale": 1
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -19.93126,
+          "y": -159.7918,
+          "z": 118.1644
+        },
+        "rotation": {
+          "x": 305.6751,
+          "y": 37.53132,
+          "z": 330.5033
+        },
+        "scale": 1,
+        "keepLoaded": true
+      },
+      {
+        "path": "BrittleHollow_Body/Sector_BH/Sector_SouthHemisphere/Sector_SouthPole/Interactables_SouthPole/Prefab_HEA_Recorder",
+        "keepLoaded": true,
+        "removeComponents": true,
+        "position": {
+          "x": -1.609481,
+          "y": -154.4545,
+          "z": 0.7797441
+        },
+        "rotation": {
+          "x": 80.47623,
+          "y": 57.72796,
+          "z": 298.8029
+        },
+        "scale": 4,
+        "hasPhysics": true,
+        "physicsRadius": 0.1
+      }
+    ],
+    "dialogue": [
+      {
+        "xmlFile": "planets/text/DB_WHITEHOLE_ESKER.xml",
+        "pathToAnimController": "Sector/Prefab_HEA_Recorder",
+        "parentPath": "Sector/Prefab_HEA_Recorder",
+        "isRelativeToParent": true,
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "radius": 2,
+        "range": 4
       }
     ],
     "translatorText": [

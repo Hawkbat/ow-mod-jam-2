@@ -28,4 +28,10 @@
 		<ParentID>3</ParentID>
 		<Text>PILEA: No way to know for sure, but I'm very excited to find out!</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_REDSEED_R_RESEARCH</FactID>
+			<Condition>2</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

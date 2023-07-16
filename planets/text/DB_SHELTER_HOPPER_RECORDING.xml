@@ -27,4 +27,16 @@
 		<ID>7</ID>
 		<Text>PILEA: Only startled. Hypothesis: these hopping creatures react strongly to light sources. I recommend that we learn from my example and keep our lights off for the time being.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_SHELTER_E_SHELTER</FactID>
+			<Condition>1</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_SHELTER_E_HOPPERS</FactID>
+			<Condition>7</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>

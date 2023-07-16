@@ -1,0 +1,13 @@
+﻿<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>RECORDING</NameField>
+	<DialogueNode>
+		<Name>START</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Hey, uh, Esker here.</Page>
+			<Page>I found this weird plant thing growing up here on the <![CDATA[<color=orange>Attlerock</color>]]> and wanted to see how far this hole went.</Page>
+			<Page>So I'm gonna have this recorder playing on loop and toss it in until I can't hear it anymore.</Page>
+			<Page>If this ends up so deep I can't reach it, well, I guess I'll send someone after it later.</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

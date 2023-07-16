@@ -1,0 +1,50 @@
+﻿<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+	<ID>DB_D_WHITEHOLE</ID>
+
+	<Entry>
+		<ID>DB_SHELTER</ID>
+		<Name>Temporary Shelter</Name>
+
+		<Curiosity>DB_REDSEED</Curiosity>
+
+		<RumorFact>
+			<ID>DB_SHELTER_R_VESSEL</ID>
+			<SourceID></SourceID>
+			<RumorName>Shelter</RumorName>
+			<RumorNamePriority>0</RumorNamePriority>
+			<Text>The Nomai were searching for shelter through a seed near the Vessel.</Text>
+		</RumorFact>
+
+		<ExploreFact>
+			<ID>DB_SHELTER_E_SHELTER</ID>
+			<Text>The Nomai set up a temporary shelter near a white hole.</Text>
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>DB_SHELTER_E_HOPPERS</ID>
+			<Text>There are hopping insect creatures around that are highly sensitive to light.</Text>
+		</ExploreFact>
+	</Entry>
+	<Entry>
+		<ID>DB_RESEARCH</ID>
+		<Name>Research Station</Name>
+
+		<Curiosity>DB_REDSEED</Curiosity>
+
+		<ExploreFact>
+			<ID>DB_RESEARCH_E_HOPPERS_CHASE</ID>
+			<Text>The hopper insects will chase prey through bramble seeds, unlike anglerfish.</Text>
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>DB_RESEARCH_E_HOPPERS_LIGHT</ID>
+			<Text>The hopper insects chase or flee from sources of light.</Text>
+		</ExploreFact>
+
+		<ExploreFact>
+			<ID>DB_SHELTER_E_REDSEED</ID>
+			<Text>The Nomai set up a temporary shelter near a white hole.</Text>
+		</ExploreFact>
+		
+	</Entry>
+</AstroObjectEntry>

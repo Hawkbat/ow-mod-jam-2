@@ -27,4 +27,10 @@
 		<ID>7</ID>
 		<Text>FOLI: We're heading down, towards the vessel's tail. I noticed some kind of organic structure there that I hope can be repurposed as a shelter. Kousa... I hope you can one day forgive me.</Text>
 	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>DB_SHELTER_R_VESSEL</FactID>
+			<Condition>7</Condition>
+		</RevealFact>
+	</ShipLogConditions>
 </NomaiObject>
