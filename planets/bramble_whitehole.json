@@ -181,14 +181,14 @@
         "assetBundle": "assetbundles/bundle",
         "path": "Assets/Mod Assets/Objects/BrambleCaps_Grow_Exterior.prefab",
         "position": {
-          "x": 60.1829,
-          "y": 73.6216,
-          "z": 307.2382
+          "x": -93.81525,
+          "y": -38.19904,
+          "z": -129.1219
         },
         "rotation": {
-          "x": 47.27332,
-          "y": 42.2583,
-          "z": 307.2383
+          "x": 12.81962,
+          "y": 274.5097,
+          "z": 267.8125
         },
         "scale": 1
       },
@@ -241,16 +241,80 @@
         "assetBundle": "assetbundles/bundle",
         "path": "Assets/Mod Assets/Objects/Hopper.prefab",
         "position": {
-          "x": -19.93126,
-          "y": -159.7918,
-          "z": 118.1644
+          "x": -151.4217,
+          "y": 81.15285,
+          "z": -27.7402
         },
         "rotation": {
-          "x": 305.6751,
-          "y": 37.53132,
-          "z": 330.5033
+          "x": 40.87924,
+          "y": 312.4373,
+          "z": 190.0135
         },
         "scale": 1,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": 100.5373,
+          "y": 5.052343,
+          "z": -84.07161
+        },
+        "rotation": {
+          "x": 17.06616,
+          "y": 104.7241,
+          "z": 47.39149
+        },
+        "scale": 1,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": 144.7672,
+          "y": -139.7598,
+          "z": 60.13582
+        },
+        "rotation": {
+          "x": 318.7514,
+          "y": 166.4208,
+          "z": 276.3921
+        },
+        "scale": 1,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": 151.2327,
+          "y": -138.6577,
+          "z": -37.01357
+        },
+        "rotation": {
+          "x": 344.4963,
+          "y": 248.8957,
+          "z": 326.734
+        },
+        "scale": 0.5,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": 84.20538,
+          "y": -117.6909,
+          "z": 25.51246
+        },
+        "rotation": {
+          "x": 20.90205,
+          "y": 26.18994,
+          "z": 340.2628
+        },
+        "scale": 0.5,
         "keepLoaded": true
       },
       {

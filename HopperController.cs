@@ -50,7 +50,7 @@ namespace EscapePodFour
 
         public override bool IsEmittingLight() => false;
 
-        public override float SizeMultiplier => 2f;
+        public override float SizeMultiplier => 4f;
 
         protected override void Awake()
         {

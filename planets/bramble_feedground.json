@@ -50,6 +50,176 @@
           "z": 0
         },
         "scale": 1.5
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -197.9502,
+          "y": -231.9792,
+          "z": 172.0242
+        },
+        "rotation": {
+          "x": 61.61217,
+          "y": 41.31382,
+          "z": 204.1551
+        },
+        "scale": 7,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -295.472,
+          "y": 177.2096,
+          "z": -225.897
+        },
+        "rotation": {
+          "x": 10.53379,
+          "y": 2.999553,
+          "z": 255.2502
+        },
+        "scale": 7,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -113.3971,
+          "y": -132.1621,
+          "z": -178.1215
+        },
+        "rotation": {
+          "x": 3.808935,
+          "y": 169.1373,
+          "z": 41.50476
+        },
+        "scale": 7,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": -305.5746,
+          "y": 18.55617,
+          "z": 81.19659
+        },
+        "rotation": {
+          "x": 351.3994,
+          "y": 175.899,
+          "z": 156.7537
+        },
+        "scale": 7,
+        "keepLoaded": true
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/Hopper.prefab",
+        "position": {
+          "x": 18.36024,
+          "y": -111.1279,
+          "z": -0.1580219
+        },
+        "rotation": {
+          "x": 37.15408,
+          "y": 291.9716,
+          "z": 172.6152
+        },
+        "scale": 4.5,
+        "keepLoaded": true
+      },
+      {
+        "path": "Anglerfish_Body",
+        "position": {
+          "x": -104.8499,
+          "y": -195.97,
+          "z": 132.6302
+        },
+        "rotation": {
+          "x": 318.7548,
+          "y": 0.3594073,
+          "z": 58.10857
+        },
+        "scale": 0.1,
+        "keepLoaded": true
+      },
+      {
+        "path": "Anglerfish_Body",
+        "position": {
+          "x": -101.5025,
+          "y": -7.358793,
+          "z": 155.3645
+        },
+        "rotation": {
+          "x": 354.6111,
+          "y": 22.33937,
+          "z": 111.6973
+        },
+        "scale": 0.1,
+        "keepLoaded": true
+      },
+      {
+        "path": "Anglerfish_Body",
+        "position": {
+          "x": 285.5106,
+          "y": -60.8736,
+          "z": 90.18748
+        },
+        "rotation": {
+          "x": 24.60671,
+          "y": 45.29935,
+          "z": 123.5712
+        },
+        "scale": 0.1,
+        "keepLoaded": true
+      },
+      {
+        "path": "Anglerfish_Body",
+        "position": {
+          "x": 41.32413,
+          "y": 222.1663,
+          "z": 122.1133
+        },
+        "rotation": {
+          "x": 37.79414,
+          "y": 231.1261,
+          "z": 167.2476
+        },
+        "scale": 0.1,
+        "keepLoaded": true
+      },
+      {
+        "path": "Anglerfish_Body",
+        "position": {
+          "x": -38.29034,
+          "y": -141.5535,
+          "z": 106.5663
+        },
+        "rotation": {
+          "x": 52.29039,
+          "y": 203.6563,
+          "z": 133.4247
+        },
+        "scale": 0.1,
+        "keepLoaded": true
+      },
+      {
+        "path": "Anglerfish_Body",
+        "position": {
+          "x": 56.0388,
+          "y": 34.48407,
+          "z": -240.5996
+        },
+        "rotation": {
+          "x": 334.1588,
+          "y": 213.6923,
+          "z": 129.7734
+        },
+        "scale": 0.1,
+        "keepLoaded": true
       }
     ]
   }

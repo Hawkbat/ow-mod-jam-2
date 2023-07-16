@@ -29,7 +29,8 @@
           "y": 0,
           "z": 22
         },
-        "scale": 0.5
+        "scale": 0.5,
+        "keepLoaded": true
       }
     ]
   },

@@ -11,7 +11,7 @@ namespace EscapePodFour
         ShipCockpitController cockpitController;
         ShipLogController logController;
 
-        public override float SizeMultiplier => 8f;
+        public override float SizeMultiplier => 6f;
 
         public override bool IsEmittingLight() => cockpitController.AreExternalLightsOn();
 
