@@ -30,7 +30,7 @@ namespace EscapePodFour
             var otherCtrl = caughtBody.GetComponent<ScaledCharacterController>();
             if (otherCtrl == null) return true;
 
-            var canEat = otherCtrl.Size < scaleCtrl.Size * 0.5f;
+            var canEat = otherCtrl.Size < scaleCtrl.Size * 0.9f;
             LogDebounced($"[Angler Eat] Angler: ^{scaleCtrl.Size} Other: {otherCtrl} ^{otherCtrl.Size} Result: {canEat}");
             if (!canEat)
             {
