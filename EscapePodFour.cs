@@ -12,12 +12,6 @@ namespace EscapePodFour
 {
     public class EscapePodFour : ModBehaviour
     {
-        public const float SHIP_SIZE_RATIO = 8f;
-        public const float PLAYER_SIZE_RATIO = 1f;
-        public const float PROBE_SIZE_RATIO = 0.5f;
-        public const float HOPPER_SIZE_RATIO = 2f;
-        public const float ANGLER_SIZE_RATIO = 50f;
-
         static EscapePodFour instance;
         static INewHorizons newHorizons;
         static Tweaks tweaks;

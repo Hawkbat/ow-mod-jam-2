@@ -38,6 +38,7 @@ namespace EscapePodFour
 
         OWRigidbody body;
         ImpactSensor impactSensor;
+        OWAudioSource audioSource;
         GenericNoiseMaker noiseMaker;
         Animator animator;
         SectorDetector sectorDetector;
@@ -56,6 +57,7 @@ namespace EscapePodFour
             base.Awake();
             body = gameObject.GetComponent<OWRigidbody>();
             impactSensor = gameObject.GetComponent<ImpactSensor>();
+            audioSource = gameObject.GetComponent<OWAudioSource>();
             noiseMaker = gameObject.GetComponentInChildren<GenericNoiseMaker>();
             animator = gameObject.GetComponentInChildren<Animator>();
             sectorDetector = gameObject.GetComponentInChildren<SectorDetector>();
@@ -113,6 +115,7 @@ namespace EscapePodFour
         protected override void FixedUpdate()
         {
             base.FixedUpdate();
+            audioSource.pitch = 0.5f + (0.5f / Scale);
             switch (State)
             {
                 case ActionState.Idle:
@@ -141,6 +144,7 @@ namespace EscapePodFour
                         body.SetVelocity(Vector3.zero);
                         noiseMaker.enabled = true;
                         noiseMaker.NoiseRadius = JUMP_NOISE_RADIUS * Scale;
+                        if (!audioSource.isPlaying) audioSource.Play();
                         if (!Target || !Target.IsValidTarget())
                         {
                             ChangeState(ActionState.Idle);
@@ -148,6 +152,7 @@ namespace EscapePodFour
                         }
                         if (Time.time > stateTime + JUMP_DELAY)
                         {
+                            audioSource.Stop();
                             animator.SetBool("isIdle", false);
                             var up = body.GetLocalUpDirection();
 
