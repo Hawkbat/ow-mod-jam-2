@@ -74,6 +74,16 @@
           "z": 0
         },
         "scale": 1.5
+      },
+      {
+        "assetBundle": "assetbundles/bundle",
+        "path": "Assets/Mod Assets/Objects/BrambleCaps_REDSEED.prefab",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": 0.1
       }
     ]
   }
