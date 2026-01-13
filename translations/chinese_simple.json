@@ -1,0 +1,144 @@
+{
+  //该翻译补丁经检查应该没有任何问题。
+    "UIDictionary": {
+      "A new adventure awaits you starting at the Vessel!": "一场全新的从飞船开始的冒险等待着你！"
+    },
+
+  "DialogueDictionary": {
+    //DB_VESSEL_RECORDING.xml
+    "FOLI: To any Nomai who return to Escall's vessel looking for survivors: We are no longer here. I'm leaving this recording as evidence of what transpired here.": "芙莉：致所有返回艾斯科尔的飞船寻找幸存者的挪麦人：我们已不在此处。我留下这段录音，作为这里所发生一切的见证。",
+    "FOLI: We managed to get most of the children and able-bodied adults into Escape Pods 1, 2, and 3. My husband, Kousa... I saw him board Pod 1. I can only hope he escaped this hellish place alive.": "芙莉：我们设法将大部分孩子和身体健全的成年人送进了1、2、3号逃生舱。我的丈夫库萨……我看着他登上了1号逃生舱。只愿他能活着逃离这人间炼狱。",
+    "FOLI: As for the rest of us, some of us were injured, or too infirm to board in time. And the bodies... Too many to identify. Our biochemist Pilea and a few others volunteered to help me tend to the survivors.": "芙莉：至于剩下的人，有的受了伤，有的身体太过虚弱，没能及时登舱。还有那些遗体……多得根本辨认不清。我们的生物化学家皮莱亚和另外几人主动留下来，帮我照料幸存者。",
+    "FOLI: Until a moment ago, the status of Escape Pod 4 was undetermined. An engineer named Keek theorized we could repair it. My specialization is medical science, so I believed him. That was my error.": "芙莉：就在不久前，4号逃生舱的状态还未确定。一位名叫基克的工程师推测我们能修好它。我的专业是医学，所以我相信了他。这是我的失误。",
+    "FOLI: The Pod has proved inoperable, so we're setting out with everyone we can. My immobile patients... I told them we'd be returning shortly. A false comfort, but all I can offer.": "芙莉：事实证明这艘逃生舱已无法运作，所以我们打算带上所有还能行动的人出发。那些无法移动的病人……我告诉他们我们很快就会回来。这虽是虚假的慰藉，却是我唯一能给予的。",
+    "FOLI: Keek rigged a small support pod with supplies and most of our oxygen-generating plants. I don't expect the vessel's life support systems to hold much longer. Asphyxiation is a cruel death, but panic will only accelerate it.": "芙莉：基克改装了一个小型支援舱，装上了补给和我们大部分的产氧植物。我估计飞船的生命维持系统撑不了多久了。窒息是种残忍的死法，但恐慌只会加快死亡的到来。",
+    "FOLI: We're heading down, towards the vessel's tail. I noticed some kind of organic structure there that I hope can be repurposed as a shelter. Kousa... I hope you can one day forgive me.": "芙莉：我们正往下走，朝着飞船的尾部前进。我注意到那里有某种有机结构，希望能改造后当作避难所。库萨……希望你有朝一日能原谅我。",
+
+    //DB_WHITEHOLE_ESKER.xml
+    "RECORDING": "录音内容",
+    "Hey, uh, Esker here.": "嘿，呃，我是埃斯克尔。",
+    "I found this weird plant thing growing up here on the <![CDATA[<color=orange>Attlerock</color>]]> and wanted to see how far this hole went.": "我在<![CDATA[<color=orange>废岩星</color>]]>上发现了这株怪异的植物，想看看这个洞到底有多深。",
+    "So I'm gonna have this recorder playing on loop and toss it in until I can't hear it anymore.": "所以我要让这个记录仪循环录音，把它扔进去，直到再也听不到声音为止。",
+    "If this ends up so deep I can't reach it, well, I guess I'll send someone after it later.": "要是它最后掉得太深，我够不着了……好吧，我想我之后会派人去找的。",
+
+    //DB_MININGSITE_SHRINK_RECORDING.xml
+    "KEEK: A quick reminder for anyone on material transport duty: don't take the exterior exits from this seed.": "基克：给所有负责物资运输的人提个醒：不要从这个荆棘种子的外部出口离开。",
+    "KEEK: Any size changes as a result of crossing the thresholds between seeds will normally be undone if you return the way you came.": "基克：穿过不同荆棘种子的边界后产生的体型变化，只要按原路返回，通常都会恢复原状。",
+    "KEEK: You might not even notice the changes normally, but conveniently for us, this seed is connected a little differently than most.": "基克：通常情况下，你们甚至察觉不到这些变化，但对我们来说万幸的是，这个荆棘种子的连接方式和大多数种子稍有不同。",
+    "KEEK: Using this method to miniaturize shipments should make transporting materials to <![CDATA[<color=orange>Hopper Town</color>]]> easy as Pi.": "基克：用这种方法缩小运输物资的体积，能让把物资运到<![CDATA[<color=orange>跳跳镇</color>]]>这件事易如反掌。",
+
+    //DB_MININGSITE_RED_SEED_RECORDING.xml
+    "FOLI: Everyone remain adhesive! Don't lose sight of your group leader!": "芙莉：所有人都跟紧了！别跟丢自己的组长！",
+    "FOLI: We'll need to make use of this seed's unique properties to make the journey through the <![CDATA[<color=orange>Red Seed</color>]]>.": "芙莉：我们得利用这个荆棘种子的独特特性，才能穿越<![CDATA[<color=orange>红种子</color>]]>完成这段行程。",
+    "FOLI: Keek, thank you. We couldn't have managed this without your engineering ingenuity.": "芙莉：基克，谢谢你。没有你的工程巧思，我们根本办不到这件事。",
+    "KEEK: Same to you, Foli. After everything that's happened since the crash, I'm glad I could contribute.": "基克：你也一样，芙莉。飞船坠毁后发生了这么多事，我很高兴自己能出一份力。",
+
+    //DB_HOPPERTOWN_SIZE_TEXT.xml
+    "PILEA: Now remember, children, the path to our settlement may be scary, but just remember to stay big!": "皮莱亚：孩子们，记住了，通往我们定居点的路可能会有点吓人，但只要记住要保持大个子就好！",
+    "PILEA: The hoppers and anglerfish aren't so scary when they're smaller than you! But don't get too large or you won't fit in the town anymore!": "皮莱亚：当跳跳虫和安康鱼比你们还小时，它们就一点都不可怕了！但也别变得太大，不然你就进不了镇子啦！",
+    "PILEA: Now what do we do if we're too small?": "皮莱亚：那如果我们变得太小了该怎么办？",
+    "TAXUS: Go through the black hole!": "塔克斯：穿过黑洞！",
+    "TSUGA: Ask a bigger Nomai for help!": "津加：找个子更大的挪麦人帮忙！",
+    "PILEA: Yes! If it's safe to do so, the black hole will let you keep your bigger size when you return!": "皮莱亚：答对了！只要环境安全，穿过黑洞后再回来，你的大个子体型就能保留下来！",
+    "PILEA: Also correct! If it's not safe to travel, a bigger Nomai can scare off the hoppers for you!": "皮莱亚：这个答案也对！如果路上不安全，个子大的挪麦人能帮你们把跳跳虫吓跑！",
+
+    //DB_HOPPERTOWN_RED_SEED_RECORDING.xml
+    "FOLI: Pilea, Keek, it's time. Is everyone in your groups ready to depart?": "芙莉：皮莱亚，基克，时间到了。你们各组的人都准备好出发了吗？",
+    "PILEA: The children are scared; they've never gone far from the settlement before. But they're as ready as they can be.": "皮莱亚：孩子们都很害怕——他们从没离开过定居点这么远。但他们已经做好了能做的所有准备。",
+    "KEEK: We're ready to go too. Maybe it would be best to use the singularity exit. Longer, but fewer scares for the little ones.": "基克：我们也准备就绪了。或许走奇点出口是最好的选择。路虽然远一些，但能让小家伙们少受点惊吓。",
+    "FOLI: I'd prefer not to waste the resources on a detour, but... you're right. Okay, everyone, listen up!": "芙莉：我本不想为绕路浪费资源，但……你说得对。好了，大家听我说！",
+    "FOLI: As our brothers, sisters, parents, and grandparents of Escall's clan did, we will venture into the furthest reaches of space, where no Nomai has tread!": "芙莉：就像我们艾斯科尔家族的兄弟姐妹、父母祖辈所做的那样，我们要勇闯太空最遥远的未知之地——那片从未有挪麦人踏足过的领域！",
+    "FOLI: We must leave the safety of the known in order to quantify the unknown! To observe, to study, that is our calling!": "芙莉：我们必须离开已知的安全区，去探索未知的一切！去观察，去研究，这是我们与生俱来的使命！",
+    "FOLI: What lies beyond the <![CDATA[<color=orange>Red Seed</color>]]>... Will be ours to discover. Our legacy.": "芙莉：<![CDATA[<color=orange>红种子</color>]]>的另一端藏着什么……终将由我们揭晓。这会是我们的传承。",
+    "FOLI: And we leave nobody behind.": "芙莉：而且我们绝不会抛下任何人。",
+    "FOLI: ...I will never make that mistake again.": "芙莉：……我绝不会再犯那样的错了。",
+
+    //DB_HOPPERTOWN_SKELETON_TEXT.xml
+    "FOLI: So what happened to this hopper, do we think?": "芙莉：你们觉得这只跳跳虫是怎么死的？",
+    "PILEA: My guess is it came here chasing after its prey, got stuck, and eventually starved.": "皮莱亚：我猜它是追猎物追到这里，结果被困住，最后饿死了。",
+    "FOLI: Stuck? It should've been able to leave the way it came, right?": "芙莉：被困住？它本该能从进来的路离开才对，不是吗？",
+    "KEEK: The spatial distortions in this place are very irregular. I hypothesize it's possible for the space to expand with creatures still in it, making them too big to fit through the exits.": "基克：这片区域的空间畸变毫无规律。我推测，空间可能会在生物仍身处其中时突然扩张，导致它们的体型变得太大，再也无法穿过出口。",
+    "FOLI: So even away from the white hole, we're still not safe. That's... frustrating.": "芙莉：也就是说，就算远离白洞，我们也依然不安全。这……太让人沮丧了。",
+    "PILEA: Maybe it coincides with growth spurts in the seeds themselves?": "皮莱亚：会不会是和荆棘种子自身的生长突增期同时发生的？",
+    "KEEK: Either way, this seed appears fairly stable now. But I imagine we'll need to address it eventually.": "基克：不管原因是什么，这个荆棘种子现在看起来还算稳定。但我想我们最终还是得解决这个问题。",
+
+    //DB_RESEARCH_MIGRATE_RECORDING.xml
+    "PILEA: I've been learning a lot about the insectoid creatures here since we build this observation post. I'm calling them \"hoppers\" since they, well, hop around.": "皮莱亚：自从我们建起这个观测站，我对这里的虫形生物有了不少了解。我管它们叫“跳跳虫”——毕竟它们总是蹦来蹦去的。",
+    "PILEA: For instance, I've learned that that will travel between seeds to chase prey or flee from predators, unlike the anglerfish, which seem to be more territorial.": "皮莱亚：比如，我发现它们会穿越不同的荆棘种子追捕猎物或躲避天敌，这和安康鱼不一样——安康鱼似乎更具领地意识。",
+    "PILEA: As we've seen, they are highly reactive to light. I hypothesize they have evolved in reaction to the presence of anglerfish.": "皮莱亚：正如我们所见，它们对光线极其敏感。我推测这是它们为了适应安康鱼的存在而演化出的特性。",
+    "PILEA: I'll log any additional findings here as I discover them. Learning the xenobiology of this place is the best way I can help.": "皮莱亚：我会把后续发现的所有新线索都记录在这里。研究这片区域的异星生物学，是我能提供的最大帮助。",
+
+    //DB_SHELTER_HOPPER_RECORDING.xml
+    "FOLI: Looks like everyone's still here. No critical injuries. Let's set up a temporary shelter. Keek?": "芙莉：看来大家都还在。没人受重伤。我们先搭建一个临时避难所吧。基克？",
+    "KEEK: I'm not detecting anything like those fish-like creatures we evaded. It appears they don't like entering these structures.": "基克：我没检测到任何类似我们之前躲避的那种鱼形生物的信号。看来它们不喜欢进入这些建筑。",
+    "PILEA: Wait, everyone turn off your lights for a second! ...There! Did you see that? Near the light beacon we dropped!": "皮莱亚：等等，所有人都把灯关掉一秒钟！……看到了吗？就在我们丢下的照明信标旁边！",
+    "KEEK: Some kind of insectoid? Doesn't look large enough to be a threat. What's it doing?": "基克：是某种虫形生物？看起来体型不大，应该构不成威胁。它在干什么？",
+    "PILEA: It just jumped at the beacon. Here, let me try turning on my own light... Woah!": "皮莱亚：它刚才朝着信标跳过来了。看，我试试打开自己的灯……哇！",
+    "FOLI: Are you hurt, Pilea?": "芙莉：你受伤了吗，皮莱亚？",
+    "PILEA: Only startled. Hypothesis: these hopping creatures react strongly to light sources. I recommend that we learn from my example and keep our lights off for the time being.": "皮莱亚：只是吓了一跳而已。我的推测是：这些跳跳生物对光源有强烈的反应。我建议大家以我为戒，暂时都把灯关掉。",
+
+    //DB_SHELTER_RED_SEED_TEXT.xml
+    "FOLI: Let's log our scouting reports here for a location to build a more permanent settlement. The spatial fluctuations from this singularity are a serious long-term risk.": "芙莉：我们把关于永久定居点选址的侦察报告都记录在这里吧。这个奇点引发的空间波动是个严重的长期隐患。",
+    "PILEA: The area on the other side of one of these organic portals (I'm calling them \"seeds\" due to their appearance) has more of these creatures inhabiting it, but we should be able to slip past them easily enough.": "皮莱亚：其中一个有机传送门（我根据外形叫它们“种子”）的另一端区域有更多这类生物栖息，但我们应该能轻易避开它们。",
+    "FOLI: The \"seed\" I explored was fairly empty, just a tangle of vines and another portal. Let's investigate yours further.": "芙莉：我探索的那个“种子”内部相当空旷，只有一团藤蔓和另一个传送门。我们再深入查查你发现的那个吧。",
+    "FOLI: Keek, I know you explained verbally already, but please log the results of your survey of the other seed here.": "芙莉：基克，我知道你已经口头说明过了，但请把你对另一个荆棘种子的勘测结果记录在这里。",
+    "KEEK: Fine. <![CDATA[<color=orange>\"Red Seed\"</color>]]> Survey Status: <![CDATA[<color=red>IMMINENT DANGER, OFF LIMITS</color>]]>.": "基克：好吧。<![CDATA[<color=orange>“红种子”</color>]]>调查报告：<![CDATA[<color=red>危险迫在眉睫</color>]]>。",
+
+    //DIALOGUE_ERNESTO.xml
+    "Ernesto": "厄内斯托",
+    "Hey it's me Ernesto the magic talking anglerfish.": "嘿，是我——会说话的魔法安康鱼厄内斯托哦。",
+    "Of course! It's basically my catchphrase at this point.": "那当然！这话现在基本就是我的口头禅了。",
+    "Nice.": "不错嘛。",
+    "That's kind of insulting, you know. I'm really sensitive about that.": "你知道吗，这话有点伤人哦。我对这种事超敏感的。",
+    "Oh, sorry.": "啊，抱歉。",
+    "But anyway, I'm hiding from the hoppers. They kind of terrify me.": "不过话说回来，我在躲那些跳跳虫呢。它们可把我吓坏了。",
+    "Me too, buddy.": "我也是啊，伙计。",
+    "Bye bye!": "拜拜啦！",
+
+    //DB_RESEARCH_RED_SEED_SCROLL.xml
+    "PILEA: I've learned something very interesting about the hoppers' migratory patterns!": "皮莱亚：我发现了一件关于跳跳虫迁徙模式的超有趣的事！",
+    "PILEA: They seem to all be coming and going from a specific location: the <![CDATA[<color=orange>Red Seed</color>]]>.": "皮莱亚：它们似乎都在往返同一个特定地点——就是那个<![CDATA[<color=orange>红种子</color>]]>。",
+    "FOLI: What do you think is on the other side of it?": "芙莉：你觉得它的另一端有什么？",
+    "KEEK: I think I can assemble a device for analyzing it. It'll require reusing some materials from the mining project.": "基克：我想我能组装一个分析它的装置。不过需要复用一些采矿项目的材料。",
+    "FOLI: Take whatever you need. If there's something that could save us from the spatial fluctuations there, investigating is top priority.": "芙莉：你需要什么尽管拿。如果那里有能让我们摆脱空间波动威胁的东西，那调查此事就是第一要务。",
+    "PILEA: No way to know for sure, but I'm very excited to find out!": "皮莱亚：虽然还无法确定，但我已经迫不及待想找到答案了！"
+  },
+
+    "ShipLogDictionary": {
+      //attlerock.xml
+      "Attlerock Seed": "废岩星荆棘种子",
+      "Esker tossed a recorder into what sounds like a bramble seed.": "埃斯克尔把一台记录仪扔进了一个疑似荆棘种子的地方。",
+      "There is a bramble seed on the Attlerock.": "废岩星上有一个荆棘种子。",
+
+      //bramble_miningsite.xml
+      "Mining Site": "采矿场",
+      "The mining site is connected to other seeds in a way that allows for retaining changes in size, as long as you don't use the exterior exits.": "只要不走外部出口，采矿场与其他荆棘种子的连接方式能让你保留体型变化的效果。",
+
+      //bramble_hoppertown.xml
+      "Hopper Town": "跳跳镇",
+      "The Nomai transported materials from the mining site to a settlement called Hopper Town.": "挪麦人将物资从采矿场运到了一个名为“跳跳镇”的定居点。",
+      "Traveling through the black hole near Hopper Town will allow you to retain an increase in your size.": "穿过跳跳镇附近的黑洞，能让你保留变大后的体型。",
+      "The hoppers and anglerfish cannot eat you if you are larger than them. The hoppers will flee from larger objects.": "只要你的体型比跳跳虫和安康鱼大，它们就无法吃掉你。跳跳虫会躲避体型更大的物体。",
+      "Hoppers can eat anglerfish if they are large enough. Dark Bramble experiences spatial distortions that can cause objects to permanently increase or decrease in size.": "只要体型足够大，跳跳虫也能吃掉安康鱼。黑棘星区域存在的空间畸变，可能导致物体的体型永久变大或缩小。",
+
+      //bramble_redseed.xml
+      "The Red Seed": "红种子",
+      "The \"Red Seed\"": "“红种子”",
+      "The Nomai scouted out a glowing red bramble seed and determined it was dangerous to enter.": "挪麦人侦察到了一个散发红光的荆棘种子，并判定进入其中十分危险。",
+      "The Nomai observed the hoppers entering and exiting the glowing red bramble seed.": "挪麦人观测到跳跳虫在这颗发光的红荆棘种子中进进出出。",
+      "The Nomai used the unique properties of the Mining Site's seed when traveling through the red bramble seed.": "挪麦人穿越红荆棘种子时，利用了采矿场那颗荆棘种子的独特特性。",
+      "The Nomai set out with their entire population to explore the other side of the red bramble seed.": "挪麦人全员出发，前去探索红荆棘种子的另一端。",
+      "The glowing red seed contains another seed covered in a strange device. The opening is too small for your ship to enter.": "这颗发光的红种子内部还有另一颗被奇异装置覆盖的种子，其入口太小，你的飞船无法进入。",
+      "You shouldn't be able to see this.": "你不该看到这段记录的。",
+
+      //bramble_whitehole.xml
+      "Temporary Shelter": "临时避难所",
+      "Shelter": "避难所",
+      "The Nomai were searching for shelter through a seed near the Vessel.": "挪麦人曾穿过飞船附近的一颗荆棘种子，寻找避难所。",
+      "The Nomai set up a temporary shelter near a white hole.": "挪麦人在一处白洞附近搭建了临时避难所。",
+      "There are hopping insect creatures around that are highly sensitive to light.": "周围存在对光线高度敏感的跳跳虫形生物。",
+      "Research Station": "研究站",
+      "The hopper insects will chase prey through bramble seeds, unlike anglerfish.": "跳跳虫会穿越荆棘种子追捕猎物，这一点与安康鱼不同。",
+      "The hopper insects chase or flee from sources of light.": "跳跳虫会朝着光源扑去，或因光源而逃离。"
+    }
+  }
