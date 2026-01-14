@@ -24,3 +24,7 @@ Tag or message Hawkbar#4578 in the Outer Wilds Modding Discord with bug reports 
 - Hawkbar: Programming, Design, Writing, Tooling
 - Insmoshable: Environment and Character Art, Design
 - Team Kabuki: Environment and Character Art, Design
+
+## Translations
+
+- Chinese (Simplified) by SanBaiMing 
