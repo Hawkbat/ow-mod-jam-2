@@ -4,7 +4,7 @@
   "author": "The Wrong Warp Team",
   "name": "The Survivors",
   "uniqueName": "Hawkbar.TheSurvivors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "owmlVersion": "2.9.1",
   "dependencies": ["xen.NewHorizons"]
 }
