@@ -1,7 +1,8 @@
 {
   //该翻译补丁经检查应该没有任何问题。
     "UIDictionary": {
-      "A new adventure awaits you starting at the Vessel!": "一场全新的从飞船开始的冒险等待着你！"
+      "A new adventure awaits you starting at the Vessel!": "一场全新的从飞船开始的冒险等待着你！",
+      "The End": "完"
     },
 
   "DialogueDictionary": {
@@ -16,7 +17,7 @@
 
     //DB_WHITEHOLE_ESKER.xml
     "RECORDING": "录音内容",
-    "Hey, uh, Esker here.": "嘿，呃，我是埃斯克尔。",
+    "Hey, uh, Esker here.": "嘿，呃，我是埃斯科。",
     "I found this weird plant thing growing up here on the <![CDATA[<color=orange>Attlerock</color>]]> and wanted to see how far this hole went.": "我在<![CDATA[<color=orange>废岩星</color>]]>上发现了这株怪异的植物，想看看这个洞到底有多深。",
     "So I'm gonna have this recorder playing on loop and toss it in until I can't hear it anymore.": "所以我要让这个记录仪循环录音，把它扔进去，直到再也听不到声音为止。",
     "If this ends up so deep I can't reach it, well, I guess I'll send someone after it later.": "要是它最后掉得太深，我够不着了……好吧，我想我之后会派人去找的。",
@@ -66,12 +67,12 @@
     "PILEA: I've been learning a lot about the insectoid creatures here since we build this observation post. I'm calling them \"hoppers\" since they, well, hop around.": "皮莱亚：自从我们建起这个观测站，我对这里的虫形生物有了不少了解。我管它们叫“跳跳虫”——毕竟它们总是蹦来蹦去的。",
     "PILEA: For instance, I've learned that that will travel between seeds to chase prey or flee from predators, unlike the anglerfish, which seem to be more territorial.": "皮莱亚：比如，我发现它们会穿越不同的荆棘种子追捕猎物或躲避天敌，这和安康鱼不一样——安康鱼似乎更具领地意识。",
     "PILEA: As we've seen, they are highly reactive to light. I hypothesize they have evolved in reaction to the presence of anglerfish.": "皮莱亚：正如我们所见，它们对光线极其敏感。我推测这是它们为了适应安康鱼的存在而演化出的特性。",
-    "PILEA: I'll log any additional findings here as I discover them. Learning the xenobiology of this place is the best way I can help.": "皮莱亚：我会把后续发现的所有新线索都记录在这里。研究这片区域的异星生物学，是我能提供的最大帮助。",
+    "PILEA: I'll log any additional findings here as I discover them. Learning the xenobiology of this place is the best way I can help.": "皮莱亚：我会把后续发现的所有新线索都记录在这里。研究这片区域的异星生物学，是我所能提供的最大帮助。",
 
     //DB_SHELTER_HOPPER_RECORDING.xml
     "FOLI: Looks like everyone's still here. No critical injuries. Let's set up a temporary shelter. Keek?": "芙莉：看来大家都还在。没人受重伤。我们先搭建一个临时避难所吧。基克？",
     "KEEK: I'm not detecting anything like those fish-like creatures we evaded. It appears they don't like entering these structures.": "基克：我没检测到任何类似我们之前躲避的那种鱼形生物的信号。看来它们不喜欢进入这些建筑。",
-    "PILEA: Wait, everyone turn off your lights for a second! ...There! Did you see that? Near the light beacon we dropped!": "皮莱亚：等等，所有人都把灯关掉一秒钟！……看到了吗？就在我们丢下的照明信标旁边！",
+    "PILEA: Wait, everyone turn off your lights for a second! ...There! Did you see that? Near the light beacon we dropped!": "皮莱亚：等等，所有人都把灯关一下！……看到了吗？就在我们丢下的照明信标旁边！",
     "KEEK: Some kind of insectoid? Doesn't look large enough to be a threat. What's it doing?": "基克：是某种虫形生物？看起来体型不大，应该构不成威胁。它在干什么？",
     "PILEA: It just jumped at the beacon. Here, let me try turning on my own light... Woah!": "皮莱亚：它刚才朝着信标跳过来了。看，我试试打开自己的灯……哇！",
     "FOLI: Are you hurt, Pilea?": "芙莉：你受伤了吗，皮莱亚？",
@@ -107,7 +108,7 @@
     "ShipLogDictionary": {
       //attlerock.xml
       "Attlerock Seed": "废岩星荆棘种子",
-      "Esker tossed a recorder into what sounds like a bramble seed.": "埃斯克尔把一台记录仪扔进了一个疑似荆棘种子的地方。",
+      "Esker tossed a recorder into what sounds like a bramble seed.": "埃斯科把一台记录仪扔进了一个疑似荆棘种子的地方。",
       "There is a bramble seed on the Attlerock.": "废岩星上有一个荆棘种子。",
 
       //bramble_miningsite.xml
@@ -124,12 +125,12 @@
       //bramble_redseed.xml
       "The Red Seed": "红种子",
       "The \"Red Seed\"": "“红种子”",
-      "The Nomai scouted out a glowing red bramble seed and determined it was dangerous to enter.": "挪麦人侦察到了一个散发红光的荆棘种子，并判定进入其中十分危险。",
+      "The Nomai scouted out a glowing red bramble seed and determined it was dangerous to enter.": "挪麦人探查到了一个散发红光的荆棘种子，并判断进入其中十分危险。",
       "The Nomai observed the hoppers entering and exiting the glowing red bramble seed.": "挪麦人观测到跳跳虫在这颗发光的红荆棘种子中进进出出。",
       "The Nomai used the unique properties of the Mining Site's seed when traveling through the red bramble seed.": "挪麦人穿越红荆棘种子时，利用了采矿场那颗荆棘种子的独特特性。",
       "The Nomai set out with their entire population to explore the other side of the red bramble seed.": "挪麦人全员出发，前去探索红荆棘种子的另一端。",
       "The glowing red seed contains another seed covered in a strange device. The opening is too small for your ship to enter.": "这颗发光的红种子内部还有另一颗被奇异装置覆盖的种子，其入口太小，你的飞船无法进入。",
-      "You shouldn't be able to see this.": "你不该看到这段记录的。",
+      "You shouldn't be able to see this.": "你不应该看到这个的。",
 
       //bramble_whitehole.xml
       "Temporary Shelter": "临时避难所",
